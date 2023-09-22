@@ -3,8 +3,9 @@ using namespace std;
 int main(){
     long long a,i,num;
     i = 0;
-    num=0;
-    while(i<5){
+    cin>>a;
+    num=a;
+    while(i<4){
         cin>>a;
         if(num<a){
             num = a;
