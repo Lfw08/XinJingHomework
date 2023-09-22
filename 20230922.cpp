@@ -7,9 +7,7 @@ int main(){
     num=a;
     while(i<4){
         cin>>a;
-        if(num<a){
-            num = a;
-        }
+        num += a;
         i++;
     }
     cout<<num<<endl;
