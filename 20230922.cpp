@@ -8,7 +8,8 @@ int main(){
     }
     i=0;
     while(i<5){
-        cout<<"bye"<<endl;
+        cout<<"Bye"<<endl;
+        i++;
     }
     return 0;
 }
