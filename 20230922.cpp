@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    long double a,i,num;
+    long long a,i,num;
     i = 0;
     num=0;
     while(i<5){
