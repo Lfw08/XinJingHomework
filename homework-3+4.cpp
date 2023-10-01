@@ -1,22 +1,34 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-int main(){
-    long double x1,x2,y1,y2;
-    long double tmp;
-    double tmp1;
-    while(cin>>x1>>y1>>x2>>y2){
+int main() {
+    int a=0,b=0,c=0,d=0;
+    long int tmp1,tmp2;
         
-        tmp = x2-x1;
-        tmp = tmp * tmp;
-        tmp += (y2-y1)*(y2-y1);
-        tmp = sqrt(tmp);
-        tmp1 = tmp;
-        printf("%.2f",tmp1);
-        cout<<endl;
+    while (a<10){
+        tmp1 = 1000*a + 100 *b + 10 *c +d;
+        tmp2 = 10 * a + b + 10 * c + d;
+        if(tmp2 *tmp2 ==tmp1){
+            cout<<a<<b<<c<<d<<endl;
+        }
+        else{}
+        d++;
+        if(d==10){
+            c++;
+            d = 0;
+        }
+        else{}
+        if(c==10){
+            b++;
+            c = 0;
+        }
+        else{}
+        if(b==10){
+            a++;
+            b = 0;
+        }
+        else{}
     }
     
- 
- 
     return 0;
 }
