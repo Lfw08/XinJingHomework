@@ -4,11 +4,10 @@ int main(){
     int s,n;
     cin>>n;
     int i = 1;
-    while(i<n){
+    for(int i = 1;i<n;i++){
         if(n%i ==0){
             s += i;
         }
-        i++;
     }
     if(s==n){
         cout<<"yes"<<endl;
