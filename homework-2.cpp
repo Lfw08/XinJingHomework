@@ -1,12 +1,7 @@
 #include <iostream>
-#include <cstdio>
-using namespace std;
 int main(){
-    long long int a,b;
-    long double c;
-    cin>>a>>b;
-    c = 10 * a + b;
-    cout<<(int)c/19;
-    
+    long long  a,b;
+    std::cin>>a>>b;
+    std::cout<<b<<' '<<a<<std::endl;
     return 0;
 }
