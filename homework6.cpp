@@ -1,24 +1,28 @@
 #include <iostream>
-int main() {
-    long long n;
-    std::cin >> n;
-    for(long long i=1;i<=n;i++){
-        // see whether i is a perfect number
-        long long sum = 0;
-        for (int divisor = 1; divisor < i; divisor++) {
-            if (i % divisor == 0) {
-                sum += divisor;
-            }
-        }
 
-        if (sum == i) {
-            // i is a perfect number
-            // Add your code here
-            std::cout<<sum<<std::endl;
-        } else {
-            // i is not a perfect number
-            // Add your code here
+int main() {
+    int n;
+    std::cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++) {
+            std::cout << " ";
+        }
+        for (int k = 1; k <= 2 * i - 1; k++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
     }
+
+    for (int i = n - 1; i >= 1; i--) {
+        for (int j = 1; j <= n - i; j++) {
+            std::cout << " ";
+        }
+        for (int k = 1; k <= 2 * i - 1; k++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+
     return 0;
-}
 }
