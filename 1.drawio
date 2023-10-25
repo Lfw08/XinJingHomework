@@ -1,0 +1,316 @@
+<mxfile host="Electron" modified="2023-10-25T16:17:02.960Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="XMYzF1QtTIrhe9wE2mKb" version="22.0.3" type="device">
+  <diagram name="第 1 页" id="U41dcV0qwjbPkhxFF7dm">
+    <mxGraphModel dx="954" dy="717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-17" value="1.2 离子反应" style="ellipse;whiteSpace=wrap;html=1;align=center;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};treeFolding=1;treeMoving=1;" vertex="1" parent="1">
+          <mxGeometry x="727" y="545" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-20" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-18" target="7v4Ik5lOLLDM02QzwC-0-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-18" value="电解质" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="940" y="350" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-19" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-18" parent="1" source="7v4Ik5lOLLDM02QzwC-0-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="512" as="sourcePoint" />
+            <mxPoint x="950" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="960" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-21" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;定义：在水溶液中/熔融状态能导电的化合物" style="shape=display;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="325" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-31" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-22" target="7v4Ik5lOLLDM02QzwC-0-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-33" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-22" target="7v4Ik5lOLLDM02QzwC-0-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-35" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-22" target="7v4Ik5lOLLDM02QzwC-0-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-22" value="强电解质" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1280" y="240" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-23" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-22" parent="1" source="7v4Ik5lOLLDM02QzwC-0-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1350" y="302" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-25" value="弱电解质" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1280" y="410" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-26" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-25" parent="1" source="7v4Ik5lOLLDM02QzwC-0-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1390" y="482" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-111" value="" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-27" target="7v4Ik5lOLLDM02QzwC-0-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-27" value="强酸" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1420" y="190" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-28" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-27" parent="1" source="7v4Ik5lOLLDM02QzwC-0-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-117" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-29" target="7v4Ik5lOLLDM02QzwC-0-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-29" value="强碱" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1420" y="230" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-32" value="盐" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1425" y="270" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-34" value="金属氧化物" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1390" y="310" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-119" value="" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-36" target="7v4Ik5lOLLDM02QzwC-0-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-36" value="弱酸" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1420" y="370" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-37" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-36" parent="1" source="7v4Ik5lOLLDM02QzwC-0-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1390" y="455" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1380" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-38" value="弱碱" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1425" y="410" width="65" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-39" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-38" parent="1" source="7v4Ik5lOLLDM02QzwC-0-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="500" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-40" value="水" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1430" y="450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-41" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-40" parent="1" source="7v4Ik5lOLLDM02QzwC-0-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380" y="550" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-45" value="" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-42" target="7v4Ik5lOLLDM02QzwC-0-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-42" value="电离" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1040" y="560" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-43" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-42" parent="1" source="7v4Ik5lOLLDM02QzwC-0-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920.004201183429" y="544.9976331360957" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-44" value="&amp;nbsp; &amp;nbsp; 电解质在溶于水或加热到熔融态时产生自由移动的离子" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1180" y="500" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-46" value="非电解质" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1285" y="122.5" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-47" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-46" parent="1" source="7v4Ik5lOLLDM02QzwC-0-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="370" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-48" value="有机物" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1420" y="80" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-49" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-48" parent="1" source="7v4Ik5lOLLDM02QzwC-0-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-50" value="非金属氧化物" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1405" y="130" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-51" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-50" parent="1" source="7v4Ik5lOLLDM02QzwC-0-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380" y="172.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-52" value="电离方程式" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1190" y="610" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-53" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-52" parent="1" source="7v4Ik5lOLLDM02QzwC-0-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="742" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-54" value="$$H_2O=H^++OH^-$$" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1350" y="570" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-55" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-54" parent="1" source="7v4Ik5lOLLDM02QzwC-0-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1280" y="635" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-57" value="$$H_2SO_4=2H^++SO_4^{2-} $$" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1320" y="625" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-58" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-57" parent="1" source="7v4Ik5lOLLDM02QzwC-0-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1375" y="670" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-59" value="酸、碱的定义" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1180" y="710" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-60" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-59" parent="1" source="7v4Ik5lOLLDM02QzwC-0-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1160" y="732" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-61" value="酸：电离产生的阳离子全部为氢离子" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="1370" y="670" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-62" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-61" parent="1" source="7v4Ik5lOLLDM02QzwC-0-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1350" y="710" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-63" value="碱：电离产生的阴离子全部为氢氧根" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1370" y="720" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-64" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-63" parent="1" source="7v4Ik5lOLLDM02QzwC-0-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1405" y="770" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-66" value="离子反应" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1030" y="790" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-67" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-66" parent="1" source="7v4Ik5lOLLDM02QzwC-0-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="915" y="782" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="930" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-76" value="" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-68" target="7v4Ik5lOLLDM02QzwC-0-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-68" value="实验：$$Na_2SO_4+BaCl_2$$" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1165" y="770" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-69" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-68" parent="1" source="7v4Ik5lOLLDM02QzwC-0-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1160" y="822" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-75" target="7v4Ik5lOLLDM02QzwC-0-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-75" value="现象：出现白色沉淀" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;strokeWidth=1;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="1405" y="775" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-81" target="7v4Ik5lOLLDM02QzwC-0-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-81" value="分析" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=0;interRankCellSpacing=50;containerType=tree;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="870" width="270" height="281" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-82" value="$$Na_2SO_4+BaCl_2$$" style="whiteSpace=wrap;html=1;" vertex="1" parent="7v4Ik5lOLLDM02QzwC-0-81">
+          <mxGeometry x="73.75" y="40" width="122.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-83" value="$$2Na^++SO_4^{2-}$$" style="whiteSpace=wrap;html=1;" vertex="1" parent="7v4Ik5lOLLDM02QzwC-0-81">
+          <mxGeometry x="20" y="130.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-84" value="" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;noEdgeStyle=1;orthogonal=1;" edge="1" parent="7v4Ik5lOLLDM02QzwC-0-81" source="7v4Ik5lOLLDM02QzwC-0-82" target="7v4Ik5lOLLDM02QzwC-0-83">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="106.875" y="92" />
+              <mxPoint x="70" y="118" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-85" value="$$Ba^{2+}+2Cl^-$$" style="whiteSpace=wrap;html=1;" vertex="1" parent="7v4Ik5lOLLDM02QzwC-0-81">
+          <mxGeometry x="150" y="130.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-86" value="" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;noEdgeStyle=1;orthogonal=1;" edge="1" parent="7v4Ik5lOLLDM02QzwC-0-81" source="7v4Ik5lOLLDM02QzwC-0-82" target="7v4Ik5lOLLDM02QzwC-0-85">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="163.125" y="92" />
+              <mxPoint x="200" y="118" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-87" value="$$BaSO_4\downarrow +Na^++Cl^-$$" style="whiteSpace=wrap;html=1;" vertex="1" parent="7v4Ik5lOLLDM02QzwC-0-81">
+          <mxGeometry x="57" y="221" width="156" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-88" value="" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;noEdgeStyle=1;orthogonal=1;" edge="1" parent="7v4Ik5lOLLDM02QzwC-0-81" source="7v4Ik5lOLLDM02QzwC-0-83" target="7v4Ik5lOLLDM02QzwC-0-87">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="183" />
+              <mxPoint x="98.5" y="209" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-89" value="" style="html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;noEdgeStyle=1;orthogonal=1;" edge="1" parent="7v4Ik5lOLLDM02QzwC-0-81" source="7v4Ik5lOLLDM02QzwC-0-85" target="7v4Ik5lOLLDM02QzwC-0-87">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="183" />
+              <mxPoint x="171.5" y="209" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-96" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-93" target="7v4Ik5lOLLDM02QzwC-0-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-93" value="本质：离子之间发生反应" style="whiteSpace=wrap;html=1;fontStyle=1;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-95" value="条件：生成沉淀或气体，水，离子浓度降低" style="whiteSpace=wrap;html=1;fontStyle=1;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1145" y="1060" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-97" value="离子方程式（书写步骤）" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="890" y="850" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-98" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" target="7v4Ik5lOLLDM02QzwC-0-97" parent="1" source="7v4Ik5lOLLDM02QzwC-0-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="912" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-103" target="7v4Ik5lOLLDM02QzwC-0-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-103" value="写出原化学方程式：$$Na_2SO_4+BaCl_2==BaSO_4\downarrow+NaCl$$" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="855" y="890" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7v4Ik5lOLLDM02QzwC-0-104" target="7v4Ik5lOLLDM02QzwC-0-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-104" value="将可电离的物质写成离子形式：$$2Na^++SO_4^{2-}+Ba^{2+}+Cl^-=BaSO_4\downarrow+Na^++Cl^-$$" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="802.5" y="990" width="355" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-106" value="消掉不参与反应的离子：$$Ba^{2+}+SO_4^{2-}=BaSO_4\downarrow$$" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1080" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-110" value="$$HCl,H_2SO_4$$" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1550" y="190" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-116" value="$$NaOH$$" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1560" y="230" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7v4Ik5lOLLDM02QzwC-0-118" value="$$CH_3COOH$$" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1540" y="370" width="130" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
