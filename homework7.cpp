@@ -3,7 +3,7 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-    double a[n+1];
+    long double a[n+1];
     for (int i=1;i<=n;i++){
         //input a[i]
         cin>>a[i];
