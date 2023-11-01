@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+int t;
 int main(){
     int a[5] = {10, 20, 30, 40, 50};
     for(int i=0;i<4;i++){
@@ -9,18 +9,21 @@ int main(){
     int min=INT_MAX;
     int min_pos=0;
     for(int j=0;j<4;j++){
-        for(int i=j;i<4;i++){
-            if(min>=a[i]){
-                min = a[i];
-                min_pos=i;
+        //find the minimum number in a[j] to a[4]
+        if (min > a[j]){
+            min = a[j];
+            min_pos = j+1;
             }
-        }
-        a[min_pos]=j+1;
-        a[j+1]=min;
+        //exchange positions
+        t=a[min_pos];
+        a[min_pos]=a[j];
+        a[j]=t;
+        
     }
     //output the new a
-    for(int k=0;k<4;k++){
-        cout<<a[k]<<" ";
-        }
+    cout<<a[3]<<" ";
+    cout<<a[0]<<" ";
+    cout<<a[2]<<" ";
+    cout<<a[1]<<" ";
     return 0;
 }
