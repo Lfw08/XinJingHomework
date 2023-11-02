@@ -1,8 +1,8 @@
-#include <iostream>
-#include <string.h>
+#include <bits/stdc++.h>
 using namespace std;
-int len,cnt[26];
+
 int main(){
+    int len,cnt[26];
     for(int i=0;i<26;i++){
         cnt[i]=0;
     }
@@ -16,10 +16,10 @@ int main(){
       cnt[s[i]-'a']++;
 	}
     for(int i=0;i<26;i++){
-        for(int j=0;j<26;j++){
+        for(int j=0;j<25;j++){
             if(cnt[j]<cnt[j+1]){
-                swap(cnt[j],cnt[j+1]);
-                swap(lett[j],lett[j+1]);
+                std::swap(cnt[j],cnt[j+1]);
+                std::swap(lett[j],lett[j+1]);
             }
         }
     }
