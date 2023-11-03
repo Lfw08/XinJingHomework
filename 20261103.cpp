@@ -1,13 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
-char a[256];
-int main(){
-    int cnt=0;
-    cin.getline(a,256);
-    for(int i=0;i<256;i++){
-        if(a[i]==' '){
-            cnt++;
+int main() {
+    int a[6];
+    for (int i = 1; i <= 4; i++) {
+        std::cin >> a[i];
+    }
+
+    for (int i = 1; i <= 4; i++) {
+        for (int j = i; j >= 1; j--) {
+            if (a[j] < a[j - 1]) {
+                int tmp = a[j - 1];
+                a[j - 1] = a[j];
+                a[j] = tmp;
+            }
         }
     }
-    cout<<cnt<<endl;
+
+    for (int i = 1; i <= 4; i++) {
+        std::cout << a[i] << " ";
+    }
+
+    return 0;
 }
