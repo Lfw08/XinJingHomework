@@ -24,26 +24,26 @@ int main() {
     // Perform the insertion sort algorithm on the array
     for (int i = 1; i < N; i++) {
         int x = a[i]; // Store the current element
-        int l = 0; // Left pointer
-        int r = i - 1; // Right pointer
+        int left = 0; // Left pointer
+        int right = i - 1; // Right pointer
 
         // Find the correct position for the current element in the sorted subarray
-        while (l <= r) {
-            int m = (l + r) / 2; // Middle index
+        while (left <= right) {
+            int m = (left + right) / 2; // Middle index
             if (x < a[m]) {
-                r = m - 1; // Move the right pointer
+                right = m - 1; // Move the right pointer
             } else {
-                l = m + 1; // Move the left pointer
+                left = m + 1; // Move the left pointer
             }
         }
 
         // Shift the elements to the right of the correct position
-        for (int j = i - 1; j >= l; j--) {
+        for (int j = i - 1; j >= left; j--) {
             a[j + 1] = a[j];
         }
 
         // Insert the current element at the correct position
-        a[l] = x;
+        a[left] = x;
     }
 
     // Print the sorted array
