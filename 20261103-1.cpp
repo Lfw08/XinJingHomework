@@ -16,18 +16,15 @@ int main() {
     // Create an array of size N
     int a[N];
 
-    // Initialize the array with random values between 0 and 999
     for (int i = 0; i < N; i++) {
         a[i] = rand() % 1000;
     }
 
-    // Perform the insertion sort algorithm on the array
     for (int i = 1; i < N; i++) {
-        int x = a[i]; // Store the current element
+        int x = a[i]; 
         int left = 0; // Left pointer
         int right = i - 1; // Right pointer
 
-        // Find the correct position for the current element in the sorted subarray
         while (left <= right) {
             int m = (left + right) / 2; // Middle index
             if (x < a[m]) {
@@ -37,12 +34,12 @@ int main() {
             }
         }
 
-        // Shift the elements to the right of the correct position
+        
         for (int j = i - 1; j >= left; j--) {
             a[j + 1] = a[j];
         }
 
-        // Insert the current element at the correct position
+        
         a[left] = x;
     }
 
