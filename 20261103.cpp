@@ -5,20 +5,19 @@ int main() {
     for (int i = 1; i <= 4; i++) {
         std::cin >> a[i];
     }
-
-    for (int i = 1; i <= 4; i++) {
-        for (int j = i; j >= 1; j--) {
-            if (a[j] < a[j - 1]) {
-                int tmp = a[j - 1];
-                a[j - 1] = a[j];
-                a[j] = tmp;
-            }
-        }
-    }
-
-    for (int i = 1; i <= 4; i++) {
-        std::cout << a[i] << " ";
-    }
+    int x;
+     for(int i=1;i<5;i++){
+        x=a[i];
+    for (int j=i-1;j>=1;j--){     
+        if (x<a[j]){
+        a[j+1]=a[j];
+        a[j]=x;
+       }	   
+    }	
+  }
+  for(int i=1;i<5;i++){
+     cout<<a[i]<<" ";
+  }
 
     return 0;
 }
