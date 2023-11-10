@@ -1,20 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
-int cnt[11];
-int a[7];
+struct Student{
+    char name[10];
+    double height;
+    double weight;
+    double score[4];
+};
 int main(){
-    
-    //input
-    for(int i=1;i<=7;i++){
-        cin>>a[i];
-    }
-    
-    for(int i=1;i<=10;i++){
-        cnt[a[i]]++;
-    }
-    for(int i=1;i<=10;i++){
-        for(int j=1;j<=cnt[i];j++){
-            cout<<i<<" ";
+    Student s[4];
+    for(int i=1;i<=3;i++){
+        for(int j=1;j<=3;j++){
+            cin>>s[j].score[i];
+            cout<<endl;
         }
     }
+    for(int i=1;i<=3;i++){
+    cout<<(s[i].score[1]+s[i].score[2]+s[i].score[3])/3<<" ";
+    }
+    return 0;
 }
