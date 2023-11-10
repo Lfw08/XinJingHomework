@@ -1,25 +1,35 @@
 #include <bits/stdc++.h>
+char a[1086],b[1086],c[10086],s1[1086],s2[1086];
 using namespace std;
-struct Student{
-    char name[10];
-    double height;
-    double weight;
-    double score[4];
-};
 int main(){
-    int sum=0;
-    Student s[4];
-    for(int i=1;i<=3;i++){
-        for(int j=1;j<=3;j++){
-            cin>>s[j].score[i];
-            cout<<endl;
-        }
+    int len1,len2;
+    cin>>s1>>s2;
+    len1=strlen(s1);
+    for(int i=0;i<len1;i++){
+        a[i]=s1[len1-i-1];
     }
-    for(int i=1;i<=3;i++){
-        for(int j=1;j<=3;j++){
-            sum+=s[i].score[1];
-        }
+    len2=strlen(s2);
+    for(int i=0;i<len2;i++){
+        b[i]=s1[len2-i-1];
     }
-    cout<<sum/3;
+    for(int i=0;i<max(len1,len2);i++){
+        c[i]=a[i]+ b[i];
+    }
+    for(int i=0;i<strlen(c);i++){
+        c[i+1]+=c[i]/10;
+        c[i]+=c[i]%10;
+    }
+    bool d=true;
+    int i=strlen(c);
+    while (d){
+        if(c[i]==0){
+            i--;
+            continue;
+        }else{d=false;}
+    }
+    cout<<i<<endl;
+    for(i+=0;i>=0;i--){
+        cout<<c[i];
+    }
     return 0;
 }
