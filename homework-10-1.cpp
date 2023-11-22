@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+char a[90],b[90];
 int main(){
-    char a[90],b[90];
+    
     cin.getline(a,80);
     cin.getline(b,80);
     int len1=strlen(a);
