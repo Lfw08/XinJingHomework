@@ -1,31 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    char str1[80];
-    char str2[80];
-    std::cin.getline(str1, 80);
-    std::cin.getline(str2, 80);
-
-    int i = 0;
-    while (str1[i] && str2[i]) {
-        if (tolower(str1[i]) < tolower(str2[i])) {
-            std::cout << "<" << std::endl;
-            return 0;
-        } else if (tolower(str1[i]) > tolower(str2[i])) {
-            std::cout << ">" << std::endl;
-            return 0;
-        }
-        i++;
+int main(){
+    int n;
+    cin >> n;
+    char a[150];
+    char b[150];
+    char c[150];
+    cin >> a;
+    cin >> b;
+    for(int i=0; i<n; i++){
+        c[i] = min(a[i], b[i]);
     }
-
-    if (str1[i]) {
-        std::cout << ">" << std::endl;
-    } else if (str2[i]) {
-        std::cout << "<" << std::endl;
-    } else {
-        std::cout << "=" << std::endl;
+    if(strcmp(c, a) == 0 || strcmp(c, b) == 0){
+        cout << c << endl;
+    }else{
+        cout << "-1" << endl;
     }
-
     return 0;
 }
