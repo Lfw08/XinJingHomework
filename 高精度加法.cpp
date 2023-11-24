@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 char s1[500],s2[500];
-int a[500],b[500],c[501];//千万把这三个整型数组初始化为0 
+int a[500],b[500],c[501];
 int main(){	
 	int len,len1,len2;
 	cin>>s1; 
