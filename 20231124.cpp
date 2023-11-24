@@ -15,7 +15,7 @@ int main(){
         cin>>h[i].y;
         cin>>h[i].person;
         h[i].s = pow(h[i].x,2)+pow(h[i].y,2);
-        h[i].s = sqrt(h[i].s);
+        h[i].s = 2 * sqrt(h[i].s);
         h[i].t = h[i].s/50.00;
         h[i].t += h[i].person*1.5;
     }
@@ -23,6 +23,6 @@ int main(){
     for(int i=0;i<n;i++){
         time += h[i].t;
     }
-    cout<<time+n;
+    cout<<time;
     return 0;
 }
