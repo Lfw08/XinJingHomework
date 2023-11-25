@@ -39,5 +39,7 @@
     "**/.vscode/**"
   ],
   "C_Cpp_Runner.useAddressSanitizer": false,
-  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace,'Ubuntu Monospace'"
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace,'Ubuntu Monospace'",
+  "C_Cpp.default.compilerPath": "D:\\Dev-Cpp\\MinGW64\\bin\\gcc.exe",
+  "C_Cpp.intelliSenseEngineFallback": "disabled"
 }
