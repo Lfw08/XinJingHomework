@@ -1,19 +1,17 @@
-#include<iostream>
-using namespace std;
-int main(){
-	string b;
-    getline(cin, b);
-	for(int i=0;i<b.length();i++){
-		if((b[i]>='w'&&b[i]<='z')||(b[i]>='W'&&b[i]<='Z')){
-			b[i]=b[i]-22;
+#include <bits/stdc++.h> 
+using namespace std;  
+int main(){  
+    int n,num_1,num_2,num_5,cnt=0;  
+    cin>>n;  
+	for(num_1=1;num_1<=100;num_1++){
+		for(num_2=1;num_2<=50;num_2++){
+			for(num_5=1;num_5<=20;num_5++){
+				if(num_1+num_2*2+num_5*5==n){
+					cnt++;
+				}
+			} 
 		}
-		else if((b[i]>='A'&&b[i]<='V')||(b[i]>='a'&&b[i]<='v')){
-			b[i]=b[i]+4;
-		}
-		else{
-			b[i]=b[i];
-		}
-	}
-	cout<<b<<endl;
-	return 0;
-} 
+	}   
+	cout<<cnt;  
+    return 0;    
+}  
