@@ -1,6 +1,13 @@
 {
   "configurations": [
     {
+      "type": "java",
+      "name": "NeonLogo",
+      "request": "launch",
+      "mainClass": "NeonLogo",
+      "projectName": "XinJingHomework_81164f34"
+    },
+    {
       "name": "(Windows) Launch",
       "type": "cppvsdbg",
       "request": "launch",
