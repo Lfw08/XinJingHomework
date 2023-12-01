@@ -1,23 +1,24 @@
-#include <bits/stdc++.h>
-using namespace std;
+
+#include <iostream>
+
 int main() {
-    int a[6];
-    for (int i = 1; i <= 4; i++) {
+    int n;
+    std::cin>>n;
+    int a[n];
+    for (int i = 0; i < n; i++) {
         std::cin >> a[i];
     }
-    int x;
-     for(int i=1;i<5;i++){
-        x=a[i];
-    for (int j=i-1;j>=1;j--){     
-        if (x<a[j]){
-        a[j+1]=a[j];
-        a[j]=x;
-       }	   
-    }	
-  }
-  for(int i=1;i<5;i++){
-     cout<<a[i]<<" ";
-  }
-
+    for (int i = 0; i < n-1; i++) {
+        int min_index = i;
+        for (int j = i + 1; j < n; j++) {
+            if (a[j] < a[min_index]) {
+                min_index = j;
+            }
+        }
+        std::swap(a[i], a[min_index]);
+    }
+    for (int i = n-1; i >= 0; i--) {
+        std::cout << a[i] << " ";
+    }
     return 0;
 }
