@@ -1,3 +1,4 @@
 {
-    "cpp-build-tool.CMakeBuildTool.updateFile": true
+    "cpp-build-tool.CMakeBuildTool.updateFile": true,
+    "huawei-cpp.languageProvider": "Hybrid"
 }
