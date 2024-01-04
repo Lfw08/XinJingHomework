@@ -1,38 +1,32 @@
-from tkinter import *
-from tkinter import ttk
+import tkinter as tk
+from tkinter import simpledialog
 
-def calculate(*args):
-    try:
-        value = float(feet.get())
-        meters.set(int(0.3048 * value * 10000.0 + 0.5)/10000.0)
-    except ValueError:
-        pass
+def check_narcissistic():
+    num = entry.get()
+    if len(num) != 3 or not num.isdigit():
+        simpledialog.messagebox.showinfo('提示', '请输入一个三位数！')
+        return
 
-root = Tk()
-root.title("Feet to Meters")
+    num = int(num)
+    sum = 0
+    for i in str(num):
+        sum += int(i) ** 3
 
-mainframe = ttk.Frame(root, padding="3 3 12 12")
-mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
-root.columnconfigure(0, weight=1)
-root.rowconfigure(0, weight=1)
+    if sum == num:
+        simpledialog.messagebox.showinfo('结果', '是水仙花数')
+    else:
+        simpledialog.messagebox.showinfo('结果', '不是水仙花数')
 
-feet = StringVar()
-feet_entry = ttk.Entry(mainframe, width=7, textvariable=feet)
-feet_entry.grid(column=2, row=1, sticky=(W, E))
+root = tk.Tk()
+root.title('水仙花数检查')
 
-meters = StringVar()
-ttk.Label(mainframe, textvariable=meters).grid(column=2, row=2, sticky=(W, E))
+frame = tk.Frame(root)
+frame.pack()
 
-ttk.Button(mainframe, text="Calculate", command=calculate).grid(column=3, row=3, sticky=W)
+entry = tk.Entry(frame)
+entry.pack(side=tk.LEFT)
 
-ttk.Label(mainframe, text="feet").grid(column=3, row=1, sticky=W)
-ttk.Label(mainframe, text="is equivalent to").grid(column=1, row=2, sticky=E)
-ttk.Label(mainframe, text="meters").grid(column=3, row=2, sticky=W)
-
-for child in mainframe.winfo_children(): 
-    child.grid_configure(padx=5, pady=5)
-
-feet_entry.focus()
-root.bind("<Return>", calculate)
+button = tk.Button(frame, text='确定', command=check_narcissistic)
+button.pack(side=tk.LEFT)
 
 root.mainloop()
