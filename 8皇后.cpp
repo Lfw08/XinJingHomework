@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 int a[9];//结果
-int b[9]={1};//是否能用
-int c[30]={1};//和一定
-int d[30]={1};//差一定
+int b[9];//是否能用
+int c[30];//和一定
+int d[30];//差一定
 
 void queen(int k){
     cout<<k;
@@ -35,6 +35,17 @@ void queen(int k){
 
 
 int main(){
+    //set b to 1
+    memset(b,1,sizeof(b));
+    //set c to 1
+    for (int i = 1; i <= 15; ++i) {
+        c[i] = 1;
+        }
+    //set d to 1
+    for (int j = 16; j <= 30; ++j) {
+        d[j] = 1;
+        }
+    
     queen(1);
     return 0;
 }
