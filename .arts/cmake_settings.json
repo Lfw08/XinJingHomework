@@ -1,0 +1,18 @@
+{
+    "configurations": {
+        "activatedProfile": "Debug",
+        "profiles": [
+            {
+                "name": "Debug",
+                "type": "Debug",
+                "toolchain": "MinGW",
+                "generator": "Ninja",
+                "cmakeOptions": "-G Ninja",
+                "buildDir": "cmake-build-debug",
+                "buildOptions": "",
+                "activated": true,
+                "isDefault": true
+            }
+        ]
+    }
+}
