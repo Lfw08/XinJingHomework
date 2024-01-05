@@ -15,7 +15,7 @@ void queen(int k){
         }
     }else{
         for(int i=1;i<=8;i++){//尝试第n列
-            if(b[i]==1 && c[k+i+7] && d[k-i+7]){
+            if(b[i]==1 && c[k+i+7]==1 && d[k-i+7]==1){
                 a[k]=i;
                 b[i]=0;
                 c[k+i+7]=0;
