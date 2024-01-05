@@ -4,6 +4,7 @@ int a[9];//结果
 int b[9];//是否能用
 int c[30];//和一定
 int d[30];//差一定
+int cnt=0;
 
 void queen(int k){
     cout<<k;
@@ -13,6 +14,7 @@ void queen(int k){
         for(int i=1;i<=8;i++){
             cout<<i<<","<<a[i]<<" " ;
             cout<<endl;
+            cnt++;
         }
         
     }else{
@@ -36,16 +38,20 @@ void queen(int k){
 
 int main(){
     //set b to 1
-    memset(b,1,sizeof(b));
+    for(int i=0;i<9;i++){
+        b[i+1]=1;
+    }
     //set c to 1
-    for (int i = 1; i <= 15; ++i) {
+    for (int i = 0; i <= 30; ++i) {
         c[i] = 1;
         }
     //set d to 1
-    for (int j = 16; j <= 30; ++j) {
+    for (int j = 0; j <= 30; ++j) {
         d[j] = 1;
         }
     
     queen(1);
+    cout<<endl;
+    cout<<cnt;
     return 0;
 }
