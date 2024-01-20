@@ -1,30 +1,37 @@
 #include <bits/stdc++.h>
 using namespace std;
-stack<int> s;
-int main(){
-    string t;
-    cin>>t;
-    int num=int(t[0]);
-    for(int i=1;i<sizeof(t);i++){
-        if(t[i]>='0' && t[i]<= '9'){
-            int n=int(t[i]);
-            s.push(n);
-        }
-        else if(t[i]=='+'){//加法
-            num += s.top();
-            s.pop();
-        }
-        else if(t[i]=='-'){//减法
-            num -= s.top();
-            s.pop();
-        }else if(t[i]=='*'){//乘法
-            num *= s.top();
-            s.pop();
-        }else if(t[i]=='/'){//除法
-            num /= s.top();
-            s.pop();
+char a[100][100];
+int m,n;
+int cnt;
+void zousifang(int x,int y){
+    a[x][y]='.';//Mark done
+    int dx,dy;
+    for(int i=-1;i<=1;i++){
+        for(int j=-1;j<=1;j++){
+            dx=x+i;
+            dy=y+j;
+            if(dx>=0&&dx<=n&&dy>=0&&dy<m&&a[dx][dy]=='W'){//keep searching on the next point
+                zousifang(dx,dy);
+            }
         }
     }
-    cout<<num;
-
+    return;
+} 
+int main(){
+    cin>>n>>m;
+    for(int i=1;i<=m;i++){
+        for(int j=1;j<=n;j++){
+            cin>>a[i][j];
+        }
+    }
+    for(int i=0;i<=n;i++){
+        for(int j=0;j<m;j++){
+            if(a[i][j]=='W'){
+                zousifang(i,j);
+                cnt++;
+            }
+        }
+    }
+    cout<<endl<<cnt-2;
+    return 0;
 }
