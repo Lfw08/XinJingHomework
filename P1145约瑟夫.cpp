@@ -22,5 +22,5 @@ int main(){
             q.pop();
         }
     }
-    return 1-1;
+    return 0;
 }
