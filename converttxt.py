@@ -1,8 +1,8 @@
 import csv
-with open ('/home/lfw/评价.csv','r')as MyFile:
+with open ('D:\\PingJia.csv','r',encoding = 'utf-8')as MyFile:
     lines=csv.reader(MyFile)
     for line in lines:
-        with open (f'/home/lfw/评价输出/{str(line[0])}.txt',"w") as File:
+        with open (f'D:\\评价输出\\{str(line[0])}.txt',"w",encoding = 'utf-8') as File:
             for a in line:
                 if(a!=line[0]):
                     if(a!=line[1]):
