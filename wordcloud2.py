@@ -35,11 +35,9 @@ for i in range(2,41):
     image=random.choice(["flower",'tree','heart'])
     alice_mask = np.array(Image.open(path.join(d, f"/home/lfw/图片/{image}.jpg")))
 
-    stopwords = set(STOPWORDS)
-    stopwords.add("said")
 
     wc = WordCloud(background_color="white", max_words=2000, mask=alice_mask,
-                stopwords=stopwords, contour_width=3, contour_color='steelblue',font_path='/home/lfw/XuandongKaishu.ttf')
+                contour_width=3, contour_color='steelblue',font_path='/home/lfw/XuandongKaishu.ttf')
 
     # generate word cloud
     wc.font_path="/home/lfw/XuandongKaishu.ttf"
