@@ -31,8 +31,6 @@ for i in range(1,42):
     image=random.choice(['alice','heart','flower','tree'])
     alice_mask = np.array(Image.open(f"{image}.jpg","r"),)
 
-    stopwords = set(STOPWORDS)
-    stopwords.add("said")
 
     wc = WordCloud(background_color="#FF6666", max_words=2000, mask=alice_mask,
                 font_path="ZhuqueFangsong.ttf",contour_color="#FFFFFF",contour_width=1,
