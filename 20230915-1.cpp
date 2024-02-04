@@ -7,6 +7,6 @@ int main(){
     cin>>hei;
     bmi = weight/hei;
     bmi = bmi/hei;
-    printf("%.2f",bmi)
+    printf("%.2f",bmi);
     return 0;
 }
