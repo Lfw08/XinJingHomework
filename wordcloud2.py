@@ -12,13 +12,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import random
+import tqdm
 
 from wordcloud import WordCloud, STOPWORDS
 
-
+tqdm.tqdm.bar_format = 'rich'
 # Read the whole text.
 textname=''
-for i in range(1,42):
+for i in tqdm.tqdm(range(1,42)):
     if(i<10):
         textname = '2026060' + str(i)
     else:
@@ -28,12 +29,12 @@ for i in range(1,42):
     # read the mask image
     # taken from
     # http://www.stencilry.org/stencils/movies/alice%20in%20wonderland/255fk.jpg
-    image=random.choice(['alice','heart','flower','tree'])
+    image=random.choice(['heart','flower'])
     alice_mask = np.array(Image.open(f"{image}.jpg","r"),)
 
 
     wc = WordCloud(background_color="#FF6666", max_words=2000, mask=alice_mask,
-                font_path="ZhuqueFangsong.ttf",contour_color="#FFFFFF",contour_width=1,
+                font_path="ZhuqueFangsong.ttf",contour_color="#FFFFFF",contour_width=15,
                 width=4096,height=4096,scale=5)
 
     # generate word cloud
@@ -44,6 +45,5 @@ for i in range(1,42):
     
     open(f"D:{'textname.png'}","w")
     wc.to_file(f"{textname}.png",)
-    print(f"{textname} is completed.")
 
     
