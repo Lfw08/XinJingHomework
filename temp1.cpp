@@ -12,7 +12,8 @@ bool check(char s[100]){
                 }
             }else{
                 cnt=0;
-            }
+            }}
+            for(int i=0;i<len;i++){
             //判断A
             if(s[i]=='A'){
                 cnt++;
@@ -23,7 +24,7 @@ bool check(char s[100]){
                 cnt=0;
             }
             //最后未至13，则返回false
-            if(i==len-1 && cnt!=13){
+            if(i==len-1 && cnt<=13){
                 return false;
             }
         
