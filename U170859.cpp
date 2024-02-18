@@ -7,6 +7,7 @@ int qx,qy,kx,ky,tx,ty;
 bool flag=0;
 
 int a[10086][10086];//存安全位置
+int b[10086][10086];//存已搜位置
 
 //定义八个方向
 int dx[] = {0, 0, 1, -1, 1, -1, 1, -1};
@@ -19,7 +20,9 @@ void bfs(int x,int y){
     //存起始
     q.push(x);
     q.push(y);
-    
+    //记录已搜
+    b[x][y]=1;
+
     //开始遍历
     while(!q.empty()){
         //当前遍历的点
@@ -42,9 +45,15 @@ void bfs(int x,int y){
                     return;
                 }
                 //不是目标点，继续搜索
-                q.push(tmpx);
-                q.push(tmpy);
+                //已经搜索过的不要再次搜索
+                if(b[tmpx][tmpy]!=1){
+                    q.push(tmpx);
+                    q.push(tmpy);}
                 //标记为已搜索
+                b[tmpx][tmpy]=1;
+
+                //若全部搜索完毕
+                
             }
         }
 
