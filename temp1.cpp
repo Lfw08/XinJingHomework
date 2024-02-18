@@ -1,44 +1,48 @@
-#include <iostream>
-#include <cmath>
-
+#include <bits/stdc++.h>
 using namespace std;
-
-// 判断三角形类型
-string judgeTriangleType(int a, int b, int c) {
-    // 判断是否能构成三角形
-    if (a + b <= c || a + c <= b || b + c <= a) {
-        return "bssjx";
+int cnt;
+bool check(char s[100]){
+    int len=strlen(s);
+        for(int i=0;i<len;i++){
+            //判断T
+            if(s[i]=='T'){
+                cnt++;
+                if(cnt==13){
+                    return true;
+                }
+            }else{
+                cnt=0;
+            }}
+            for(int i=0;i<len;i++){
+            //判断A
+            if(s[i]=='A'){
+                cnt++;
+                if(cnt==13){
+                    return true;
+                }
+            }else{
+                cnt=0;
+            }
+            //最后未至13，则返回false
+            if(i==len-1 && cnt<=13){
+                return false;
+            }
+        
     }
 
-    // 判断三角形类型
-    if (a == b && b == c) {
-        return "db"; // 等边三角形
-    } else if (a == b || b == c || a == c) {
-        // 等腰三角形
-        if (a * a + b * b == c * c || b * b + c * c == a * a || a * a + c * c == b * b) {
-            return "dyzj"; // 等腰直角三角形
-        } else {
-            return "dyrj"; // 等腰锐角三角形
-        }
-    } else {
-        // 普通三角形
-        if (a * a + b * b == c * c) {
-            return "ptzj"; // 普通直角三角形
-        } else if (a * a + b * b > c * c) {
-            return "ptrj"; // 普通锐角三角形
-        } else {
-            return "dydj"; // 等腰钝角三角形
-        }
-    }
+
 }
 
-int main() {
+int main(){
     int n;
-    cin >> n;
-    for (int i = 0; i < n; ++i) {
-        int a, b, c;
-        cin >> a >> b >> c;
-        cout << judgeTriangleType(a, b, c) << endl;
-    }
-    return 0;
+    cin>>n;
+    char s[100];
+    for(int a=0;a<n;a++){
+        cin>>s;
+        if(check(s)){
+            cout<<"YES"<<endl;
+        }else{
+            cout<<"NO"<<endl;
+        }
+}
 }
