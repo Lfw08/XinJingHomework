@@ -1,22 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
-int b[10];
+
 int main(){
-    int a[10];
+    int n;
+    cin >> n;
+    int a[n] = {0};
+
+    for(int i=0;i<n;i++){
+        int tmp;
+        cin >> tmp;
+        a[tmp]++;
+    }
+
     
-    for(int i=0;i<5;i++){
-        cin>>a[i];
-    }
-    for(int i=0;i<5;i++){
-        b[a[i]]++;
-    }
-    for(int i=0;i<10;i++){
-        int tmp=b[i];
-        for(int j=0;j<tmp;j++){
-            a[j]=i;
+    int maxIndex = 0;
+    for(int i=0;i<n;i++){
+        if(a[i]>=a[maxIndex]){
+            maxIndex = i;
         }
     }
-    cout<<a[2]+a[3]+a[4]<<endl;
-    
+    cout << maxIndex;
+
     return 0;
 }
