@@ -1,44 +1,48 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-
-// ∫Ø ˝”√”⁄ºÏ≤ÈƒÍ∑› «∑ÒÃÿ ‚
-bool isSpecialYear(int year) {
-    int digits[4];
-    int temp = year;
-    int count = 0;
-
-    // ∑÷¿ÎƒÍ∑›µƒ∏˜∏ˆ ˝◊÷
-    while (temp > 0) {
-        digits[count++] = temp % 10;
-        temp /= 10;
-    }
-
-    // ºÏ≤È ˝◊÷ «∑Òª•≤ªœ‡Õ¨
-    for (int i = 0; i < 3; ++i) {
-        for (int j = i + 1; j < 4; ++j) {
-            if (digits[i] == digits[j]) {
-                return false; // »Áπ˚”–œ‡Õ¨µƒ ˝◊÷£¨∑µªÿfalse
+int cnt;
+bool check(char s[100]){
+    int len=strlen(s);
+        for(int i=0;i<len;i++){
+            //Âà§Êñ≠T
+            if(s[i]=='T'){
+                cnt++;
+                if(cnt==13){
+                    return true;
+                }
+            }else{
+                cnt=0;
+            }}
+            for(int i=0;i<len;i++){
+            //Âà§Êñ≠A
+            if(s[i]=='A'){
+                cnt++;
+                if(cnt==13){
+                    return true;
+                }
+            }else{
+                cnt=0;
             }
-        }
+            //ÊúÄÂêéÊú™Ëá≥13ÔºåÂàôËøîÂõûfalse
+            if(i==len-1 && cnt<=13){
+                return false;
+            }
+        
     }
 
-    return true; // »Áπ˚À˘”– ˝◊÷∂º≤ªÕ¨£¨∑µªÿtrue
+
 }
 
-int main() {
+int main(){
     int n;
-    cin >> n;
-    while (n--) {
-        int year;
-        cin >> year;
-
-        // ¥”µ±«∞ƒÍ∑›ø™ º£¨÷ƒÍ‘ˆº”£¨÷±µΩ’“µΩÃÿ ‚ƒÍ∑›
-        while (!isSpecialYear(year)) {
-            year++;
+    cin>>n;
+    char s[100];
+    for(int a=0;a<n;a++){
+        cin>>s;
+        if(check(s)){
+            cout<<"YES"<<endl;
+        }else{
+            cout<<"NO"<<endl;
         }
-
-        cout << year << endl;
-    }
-
-    return 0;
+}
 }
