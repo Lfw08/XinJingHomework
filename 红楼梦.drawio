@@ -1,0 +1,195 @@
+<mxfile host="Electron" modified="2024-02-19T10:01:24.717Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="_h5cOve6h0h04kmtEgcW" version="22.0.3" type="device">
+  <diagram name="第 1 页" id="GGUDDVQBb7PkC_wtJiyP">
+    <mxGraphModel dx="1482" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-1" value="人物个性" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="540" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-2" value="Sub Topic" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="440" y="400" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-3" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="Sj4cXKq8HD7vY3wTs-tB-2" parent="1" source="Sj4cXKq8HD7vY3wTs-tB-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="332" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Sj4cXKq8HD7vY3wTs-tB-5" target="Sj4cXKq8HD7vY3wTs-tB-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-5" value="情节" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="916.5" y="120" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-10" value="第一回" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=0;strokeColor=default;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="740" y="245" width="453" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-11" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-10">
+          <mxGeometry y="30" width="453" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-12" value="主要人物" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-11">
+          <mxGeometry width="163" height="25" as="geometry">
+            <mxRectangle width="163" height="25" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-13" value="甄士隐" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-11">
+          <mxGeometry x="163" width="290" height="25" as="geometry">
+            <mxRectangle width="290" height="25" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-14" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-10">
+          <mxGeometry y="55" width="453" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-15" value="情节" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-14">
+          <mxGeometry width="163" height="80" as="geometry">
+            <mxRectangle width="163" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-16" value="1.石头记：石头与二仙师&lt;br&gt;2.木石之盟：仙草和侍者&lt;br&gt;3.资助贾雨村" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-14">
+          <mxGeometry x="163" width="290" height="80" as="geometry">
+            <mxRectangle width="290" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-17" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-10">
+          <mxGeometry y="135" width="453" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-18" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-17">
+          <mxGeometry width="163" height="20" as="geometry">
+            <mxRectangle width="163" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-19" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-17">
+          <mxGeometry x="163" width="290" height="20" as="geometry">
+            <mxRectangle width="290" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-21" value="第二回" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=0;strokeColor=default;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="740" y="420" width="453" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-22" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-21">
+          <mxGeometry y="30" width="453" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-23" value="人物" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-22">
+          <mxGeometry width="163" height="25" as="geometry">
+            <mxRectangle width="163" height="25" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-24" value="贾雨村" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-22">
+          <mxGeometry x="163" width="290" height="25" as="geometry">
+            <mxRectangle width="290" height="25" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-25" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-21">
+          <mxGeometry y="55" width="453" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-26" value="情节" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-25">
+          <mxGeometry width="163" height="80" as="geometry">
+            <mxRectangle width="163" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-27" value="1.贾雨村赴考考中，报恩不得&lt;br&gt;2.贾雨村被开革，后来经推荐，去交林黛玉念书&lt;br&gt;3.与冷子兴相遇，冷子兴讲述贾府情况" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-25">
+          <mxGeometry x="163" width="290" height="80" as="geometry">
+            <mxRectangle width="290" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-28" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-21">
+          <mxGeometry y="135" width="453" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-29" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-28">
+          <mxGeometry width="163" height="20" as="geometry">
+            <mxRectangle width="163" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-30" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-28">
+          <mxGeometry x="163" width="290" height="20" as="geometry">
+            <mxRectangle width="290" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-31" value="第一回" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=0;strokeColor=default;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="740" y="600" width="453" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-32" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-31">
+          <mxGeometry y="30" width="453" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-33" value="人物" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-32">
+          <mxGeometry width="163" height="25" as="geometry">
+            <mxRectangle width="163" height="25" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-34" value="甄士隐、贾雨村" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-32">
+          <mxGeometry x="163" width="290" height="25" as="geometry">
+            <mxRectangle width="290" height="25" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-35" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-31">
+          <mxGeometry y="55" width="453" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-36" value="情节" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-35">
+          <mxGeometry width="163" height="80" as="geometry">
+            <mxRectangle width="163" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-37" value="1.石头记：石头与二仙师&lt;br&gt;2.木石之盟：仙草和侍者&lt;br&gt;3.甄士隐女儿丢失&lt;br&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-35">
+          <mxGeometry x="163" width="290" height="80" as="geometry">
+            <mxRectangle width="290" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-38" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-31">
+          <mxGeometry y="135" width="453" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-39" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-38">
+          <mxGeometry width="163" height="20" as="geometry">
+            <mxRectangle width="163" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-40" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-38">
+          <mxGeometry x="163" width="290" height="20" as="geometry">
+            <mxRectangle width="290" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-41" value="第一回" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=0;strokeColor=default;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="740" y="780" width="453" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-42" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-41">
+          <mxGeometry y="30" width="453" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-43" value="人物" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-42">
+          <mxGeometry width="163" height="25" as="geometry">
+            <mxRectangle width="163" height="25" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-44" value="甄士隐、贾雨村" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-42">
+          <mxGeometry x="163" width="290" height="25" as="geometry">
+            <mxRectangle width="290" height="25" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-45" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-41">
+          <mxGeometry y="55" width="453" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-46" value="情节" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-45">
+          <mxGeometry width="163" height="80" as="geometry">
+            <mxRectangle width="163" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-47" value="1.石头记：石头与二仙师&lt;br&gt;2.木石之盟：仙草和侍者&lt;br&gt;3.甄士隐女儿丢失&lt;br&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-45">
+          <mxGeometry x="163" width="290" height="80" as="geometry">
+            <mxRectangle width="290" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-48" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-41">
+          <mxGeometry y="135" width="453" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-49" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-48">
+          <mxGeometry width="163" height="20" as="geometry">
+            <mxRectangle width="163" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sj4cXKq8HD7vY3wTs-tB-50" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="Sj4cXKq8HD7vY3wTs-tB-48">
+          <mxGeometry x="163" width="290" height="20" as="geometry">
+            <mxRectangle width="290" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
