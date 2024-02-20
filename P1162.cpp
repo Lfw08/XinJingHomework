@@ -50,11 +50,9 @@ int main(){
                 board[i][j]=3;
 		}
 	}
-    //从四个角分别搜索一遍
-    bfs(1,1);
-    bfs(1,n);
-    bfs(n,1);
-    bfs(n,n);
+    
+    bfs(0,0);
+    
 
 
     for(int i=1; i<=n; i++) {
