@@ -42,10 +42,12 @@ void bfs(int x,int y){
                 //确认是否为目标点
                 if(tmpx==tx && tmpy==ty){
                     flag=1;
-                    return;
+                    //结束前清空队列
+                    while(!q.empty()){
+                        q.pop();
+                    }
                 }
-                //不是目标点，继续搜索
-                //已经搜索过的不要再次搜索
+                //不是目标点且并没有搜索过，继续搜索
                 if(b[tmpx][tmpy]!=1){
                     q.push(tmpx);
                     q.push(tmpy);}
@@ -53,10 +55,15 @@ void bfs(int x,int y){
                 b[tmpx][tmpy]=1;
 
                 //若全部搜索完毕
+
                 
             }
         }
 
+    }
+    //结束之前清空队列
+    while(!q.empty()){
+        q.pop();
     }
     return;
 }
@@ -84,7 +91,7 @@ int main(){
         //qx、qy之差相同标记为不可用
         for(int i=1;i<=n;i++){
             for(int j=1;j<=n;j++){
-                if(abs(i-j) == abs(qx-qy)){
+                if(i-j+1000 == qx-qy+1000){
                     a[i][j] = 1;
                 }
             }
@@ -106,7 +113,14 @@ int main(){
                 a[i][j] = 0;
             }
         }
-        
+        //清空b
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                b[i][j] = 0;
+            }
+        }
+        //清空flag
+        flag = 0;
 
         //一次结束，下一组数据
     }
