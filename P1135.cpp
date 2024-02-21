@@ -20,7 +20,7 @@ int main() {
         cin >> a[i]; // Input
     }
 
-    queue<int> q; 
+    queue<int> q;  
     q.push(start); 
     int cnt = 0; // Counter
 
