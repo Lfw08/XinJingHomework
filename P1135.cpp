@@ -3,6 +3,7 @@ using namespace std;
 
 int a[114514];
 bool vis[114514];
+int b[114514];
 
 int main() {
     
@@ -22,7 +23,6 @@ int main() {
     queue<int> q; 
     q.push(start); 
     int cnt = 0; // Counter
-    int b[n+1] = {0}; //已遍历过的状态
 
     while (++cnt) {
         int x = q.size();
