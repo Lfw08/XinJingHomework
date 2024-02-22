@@ -31,18 +31,22 @@ void dfs(int x,int b,int k){
 int main(){
 	cin>>t;
 	for(int i=0;i<t;i++){
+		
 		flag[i]=false;
 		cin>>a[i];
 		cin>>b[i];
 		dfs(a[i],b[i],i);
 		
+		
+		
+	}
+	for(int i=0;i<t;i++){
 		if(flag[i]){
 			cout<<"YES"<<endl;
 		}
 		else{
 			cout<<"NO"<<endl;
 		}
-		flag[i]=false;
 	}
 	return 0;
 }
