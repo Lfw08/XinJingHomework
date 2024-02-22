@@ -52,7 +52,7 @@ int main(){
                     q.push(Step(p.num+1,t,xx,yy));
                     s.insert(t);
                 }
-                swap(t[position], t[nextPosition]);
+                swap(t[position], t[nextPos]);
             }
         }
     }
