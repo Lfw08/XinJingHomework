@@ -1,26 +1,22 @@
-//约瑟夫问题
-#include <bits/stdc++.h>
+#include <iostream>
+#include <queue>
 using namespace std;
-queue<int> q;
 int main(){
-    int m,n;
-    cin>>n>>m;
-    for(int i=1;i<=n;i++){
-        q.push(i);
-    }
-    int flag=1;
-    while(!q.empty()){
-        if(flag!=m){
-            int tmp=q.front();
-            q.pop();
-            q.push(tmp);
-            flag++;
-        }else{
-            flag=1;
-            int tmp=q.front();
-            cout<<tmp<<" ";
-            q.pop();
+    int k;
+    cin>>k;   
+	int m= k; 
+    bool flag= true;
+    while (flag){
+        m++;//mֵ���ٴ�k+1��ʼ 
+        int s= 0;//���ù������ƶ�
+        for (int i=0; i<k; i++){//ɱk������ 
+            s = (s+ m- 1)%(2*k - i);//���еı��ţ�s+m-1��2*k-iͬ��Լɪ�������ĵ��� 
+            if (s< k)//������ҪС��k�Ļ���˵����ɱ���ˣ�����break
+				break;
+            if (i== k-1)//��ʱɱ��k�����ˣ���Ҫ����
+				flag= 0;
         }
     }
+    cout<< m;    
     return 0;
 }
