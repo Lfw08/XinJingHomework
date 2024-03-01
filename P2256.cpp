@@ -1,44 +1,68 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<string>
 using namespace std;
-int f(114514);
-
-int find(int x){
-	if(f[x]==x){
-		return x;
-	}
-	else{
-		return f[x]=find(f[x]);
+struct Stu
+{
+	string name;
+	int num;
+}in[20005];
+int n,m,k;
+string in1,in2;
+void begin()
+{
+	for(int i=1;i<=n;i++)
+	{
+		in[i].num=i;
 	}
 }
-
-struct People{
-	int num;
-	string name;
-};
-
-int main(){
-	int n,m,k;
-	People s1,s2;
-	cin>>n>>m;
-	for(int i=1;i<=n;++i){
-		//初始化
-		cin>>s1.name;
-		f[s1.num]=s1.num;//我的祖先就是我
+int findNum(string s)
+{
+	int out;
+	for(int i=1;i<=n;i++)
+	{
+		if(in[i].name==s)
+		{
+			out=i;
+			break;
+		}
 	}
-	for(int i=1;i<=m;++i){
-		//并
-		cin>>s1.name>>s2.name;//两位选手
-		string x1=find(s1.num),x2=find(s2.num);
-		if(x1!=x2) f[x1]=x2;
+	return out;
+}
+int find(int x)
+{
+	if(in[x].num==x)
+	{
+		return x;
+	}
+	else
+	{
+		return in[x].num=find(in[x].num);
+	}
+}
+int main()
+{
+	cin>>n>>m;
+	begin();
+	for(int i=1;i<=n;i++)
+	{
+		cin>>in[i].name;
+	}
+	for(int i=0;i<m;i++)
+	{
+		cin>>in1>>in2;
+		in[find(findNum(in1))].num=find(in[findNum(in2)].num);
 	}
 	cin>>k;
-	for(int i=1;i<=k;++i){
-		cin>>s1>>s2;
-		string x1=find(s1.num),x2=find(s2.num);
-		if(x1!=x2){
-			cout<<"No."<<endl;
-		}else{
+	for(int i=0;i<k;i++)
+	{
+		cin>>in1>>in2;
+		if(find(findNum(in1))==find(findNum(in2)))
+		{
 			cout<<"Yes."<<endl;
+		}
+		else
+		{
+			cout<<"No."<<endl;
 		}
 	}
 	return 0;
