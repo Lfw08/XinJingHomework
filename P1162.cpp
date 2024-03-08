@@ -50,18 +50,21 @@ int main(){
                 board[i][j]=3;
 		}
 	}
-    
-    bfs(0,0);
-    
+    //从四个角分别搜索一遍
+    bfs(1,1);
 
 
     for(int i=1; i<=n; i++) {
-		for(int j=1; j<=n; j++) {/*从1输出到n，别把辅助外圈一块输出了*/
+		for(int j=1; j<=n; j++) {
 			//将3替换成2
             if(board[i][j]==3)
                 board[i][j]=2;
-
-            cout<<board[i][j]<<" ";
+			if(j < n ){
+				cout<<board[i][j]<<" ";
+			}
+            else{
+            	cout<<board[i][j];
+            }
 		}
 		cout<<endl;
 	}
