@@ -16,22 +16,21 @@ int main() {
     }
     vis[0] = 1;
     for (int num = 0; num < n - 1; num++) {
-        for (int j = 0; j < n; j++) {
+        for (int j = 1; j < n; j++) {
             if (vis[j] == 1) {
-                w = 1000;
-                for (int k = 0; k < n; k++) {
-                    if (vis[k] == 0 && gh[j][k] <= w) {
+                w = 10000;
+                for (int k = 1; k < n; k++) {
+                    if (vis[k] == 0 && gh[j][k] < w) {
                         tmpj = j;
                         tmpk = k;
                         w = gh[j][k];
-                        break;
                     }
                 }
             }
         }
         vis[tmpk] = 1;
         out += w;
-        cout << tmpj << "-----" << tmpk << endl;
+        cout << tmpj+1 << "-----" << tmpk+1 << endl;
     }
     cout<<endl;
     cout<<out;
