@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int a[10][10],vis[100],num;
 void dfs(int h){
