@@ -9,7 +9,7 @@ int main()
 	memset(s , 1 , sizeof(s)) ;//初始化s 
 	
 	int n , m , ans = 0 ;
-	cin<<n<<m; 
+	cin>>n>>m; 
 	for(int i = 1 ; i <= m ; ++i)
 	{
 		int u , v , c ;
@@ -32,6 +32,6 @@ int main()
 	for(int i = 1 ; i<= n ; ++i)//寻找分值最大的路 
 		if(s[i] > ans)
 			ans = s[i] ;
-	cout<<n-1<<ans;
+	cout<<n-1<<ans<<" ";
 	return 0 ;
 }
