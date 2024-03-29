@@ -1,6 +1,7 @@
+//Dij
 #include<bits/stdc++.h>
 using namespace std;
-const int inf = 1e9+7;
+const int inf = 2e9+7;
 struct edge{
 	int w,v;
 };
@@ -25,6 +26,7 @@ void djstl(){
 	node_u.dis = 0;
 	q.push(node_u );
 	dist[s] = 0;
+
 	while(!q.empty()){
 		node_u = q.top();
 		q.pop();
