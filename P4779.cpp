@@ -26,6 +26,7 @@ void djstl(){
 	node_u.dis = 0;
 	q.push(node_u );
 	dist[s] = 0;
+
 	while(!q.empty()){
 		node_u = q.top();
 		q.pop();
