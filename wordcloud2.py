@@ -40,6 +40,7 @@ for i in tqdm.tqdm(range(1,42)):
     # generate word cloud
     wc.generate(text)
     
+    
 
     # store to file
     

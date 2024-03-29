@@ -1,11 +1,7 @@
-#include<iostream>
-#include<cstdio>
-#include<cstring>
-#include<queue>
-#include<set>
-#include<vector>
+//Dij
+#include<bits/stdc++.h>
 using namespace std;
-const int inf = 1e9+7;
+const int inf = 2e9+7;
 struct edge{
 	int w,v;
 };
@@ -13,7 +9,7 @@ struct node{
 	int pos,dis;
 	bool operator <(const node &a)const{
 		return dis>a.dis;
-	}
+	}//ä½¿å¾—å¯ä»¥æ’åˆ—ç»“æ„ä½“
 };
 vector<edge> adj[100005];
 priority_queue<node> q;
@@ -36,7 +32,7 @@ void djstl(){
 		if(vis[node_u.pos]==true){
 			continue;
 		}
-		vis[node_u.pos]=true;//c´¦Àí¹ıÊÇÕæ 
+		vis[node_u.pos]=true;//cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 		for(int i = 0; i < adj[node_u.pos].size(); i++){
 			int v = adj[node_u.pos][i].v;
 			int w = adj[node_u.pos][i].w;
