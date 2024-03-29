@@ -1,10 +1,6 @@
-#include<iostream>
-#include<cstdio>
-#include<cstring>
-#include<queue>
-#include<set>
-#include<vector>
+#include<bits/stdc++.h>
 using namespace std;
+
 //const int inf = 1e9+7;
 const int inf = 2147483647;
 struct edge{
@@ -20,8 +16,10 @@ void spfa(){
 		vis[i] = false;
 		dist[i] = inf;
 	}
+
 	dist[s] = 0;
 	vis[s]=1;
+	
 	q.push(s);
 	while (!q.empty()){
 		int u = q.front();
