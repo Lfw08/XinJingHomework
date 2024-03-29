@@ -1,6 +1,7 @@
+//Dij
 #include<bits/stdc++.h>
 using namespace std;
-const int inf = 1e9+7;
+const int inf = 2e9+7;
 struct edge{
 	int w,v;
 };
