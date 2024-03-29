@@ -6,7 +6,7 @@ ll fspow(ll a, ll b,ll p) {
   ll result = 1;
   while (b > 0) {
     if (b & 1) result = result * a % p;
-    a = a * a;
+    a = a * a % p;
     b >>= 1;
   }
   return result;
