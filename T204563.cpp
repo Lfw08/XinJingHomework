@@ -3,18 +3,22 @@ using namespace std;
 int gh[7][7],visit[7];
 const int n=7;
 queue<int> q;
-void bfs(int x){
+void bfs(int x) {
+	if (x < 0 || x >= n) {
+		throw invalid_argument("Invalid vertex");
+	}
+	visit[x] = 1;
 	q.push(x);
-	while(!q.empty()){
-		int x=q.front();
+	while (!q.empty()) {
+		int v = q.front();
 		q.pop();
-		for(int i=0;i<n;i++){
-			if(gh[x][i]==1&&visit[i]==0){
-				visit[i]=1;
-				cout<<"-"<<i;
-				q.push(i);
+		for (int u = 0; u < n; u++) {
+			if (gh[v][u] != 0 && visit[u] == 0) {
+				visit[u] = 1;
+				cout << "-" << u;
+				q.push(u);
 			}
-		}	
+		}
 	}
 	return;
 }
