@@ -9,7 +9,7 @@ struct Edge {
     Edge(int u = 0, int v = 0, int w = 0) : u(u), v(v), w(w) {}
 };
 
-vector<Edge> edge;
+vector<Edge> edges;
 int dist[MAXN][MAXN];
 
 void floyd(int n) {
@@ -35,7 +35,7 @@ int main() {
     for (int i = 1; i <= m; i++) {
         int u, v, w;
         cin >> u >> v >> w;
-        edge.push_back(Edge(u, v, w));
+        edges.push_back(Edge(u, v, w));
         dist[u][v] = min(dist[u][v], w);
         dist[v][u] = min(dist[v][u], w);
     }
