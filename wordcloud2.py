@@ -39,8 +39,9 @@ for i in tqdm.tqdm(range(1,42)):
 
     # generate word cloud
     wc.generate(text)
-    
-    
+    plt.open(wc)
+    plt.axis("off")
+    plt.show()
 
     # store to file
     
