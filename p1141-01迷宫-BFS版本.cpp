@@ -2,7 +2,7 @@
 #include <cstring>
 #include <queue>
 using namespace std;
-int board[1005][1005];
+int edges[1005][1005];
 int color[1005][1005];//ÿ��������ɫ�� 
 int n, m;
 int nextColor;
@@ -31,7 +31,7 @@ int bfs(int x, int y) {
             	//�б߽� 
                 continue;
             }
-            if (color[xx][yy] == -1 && board[xx][yy] != board[x][y]) {
+            if (color[xx][yy] == -1 && edges[xx][yy] != edges[x][y]) {
             	// �߽�û�����ģ���һ��if������û�߹��ұ�֤01��һ�� 
                 color[xx][yy] = nextColor;
                 count++;
@@ -51,7 +51,7 @@ int main() {
         for (int j = 1; j <= n; ++j) {
             char c;
             cin >> c;
-            board[i][j] = c - '0';
+            edges[i][j] = c - '0';
         }
     }
     memset(color, -1, sizeof(color));
