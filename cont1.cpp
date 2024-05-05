@@ -12,7 +12,8 @@ void dpdfs(){
 }
 
 int main(){
-    cin>>n>>M;
+    cin>>n>>M; //物品个数，容积
+    
     for (int i = 1; i <= n; i++) {
     cin >> weight[i] >> v[i];  // 输入物品的重量和价值
   }
