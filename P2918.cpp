@@ -8,17 +8,7 @@ int a[maxn],b[maxn],dp[maxn];
 
 void dpdfs(){
 	for(int i=1;i<=n;i++)
-        for(int j=a[i];j<=m;j++)
-        dp[j]=min(dp[j],dp[j-a[i]]+b[i]);
-}
 
-
-int main()
-{
-    cin>>n>>m;
-    for(int i=1;i<=m+5000;i++)
-    dp[i]=114514;
-    for(int i=1;i<=n;i++)
     cin>>a[i]>>b[i];
     dpdfs();
     for(int i=m;i<=m+5000;i++)
