@@ -23,15 +23,15 @@ void inOrder(int r){ //中序
     inOrder(2*r + 1);
 }
 
-void left(int r){
+void leaf(int r){
     if(tree[r] == '#'){
         return ;
     }
     if(tree[2*r] == '#' && tree[2*r + 1] == '#'){
         cnt++;
     }
-    left(2*r);
-    left(2*r + 1);
+    leaf(2*r);
+    leaf(2*r + 1);
 }
 
 void depth(int r){
