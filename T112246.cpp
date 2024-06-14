@@ -2,8 +2,8 @@
 using namespace std;
 
 int cnt,maxdep;
-char tree[114514];
-int dep[114514];
+char tree[1145];
+int dep[1145];
 
 void buildtree(int x){
     cin>>tree[x];
@@ -62,13 +62,13 @@ int main(){
         cout<<tree[i];
     }
     */
-    cout<<endl; 
+    
 
     inOrder(1);
     cout<<endl;
     postOrder(1);
     cout<<endl;
-    left(1);
+    leaf(1);
     cout<<cnt<<endl;
     depth(1);
     cout<<maxdep<<endl;
