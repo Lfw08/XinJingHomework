@@ -2,8 +2,8 @@
 using namespace std;
 
 int cnt,maxdep;
-char tree[1145];
-int dep[1145];
+char tree[114514];
+int dep[114514];
 
 void buildtree(int x){
     cin>>tree[x];
@@ -42,17 +42,36 @@ void depth(int r){
     if(maxdep < dep[r]){
         maxdep = dep[r];
     }
-    depth(r);
     depth(2*r);
+    depth(2*r+1);
 }
 
-void postOrder(){
-    
+void postOrder(int r){
+    if(tree[r] == '#'){
+        return;
+    }
+    postOrder(2*r);
+    postOrder(2*r + 1);
+    cout<<tree[r];
 }
-
-
-
 
 int main(){
     buildtree(1);
+    
+    /* for(int i = 1; i < 15; i++){
+        cout<<tree[i];
+    }
+    */
+    cout<<endl; 
+
+    inOrder(1);
+    cout<<endl;
+    postOrder(1);
+    cout<<endl;
+    left(1);
+    cout<<cnt<<endl;
+    depth(1);
+    cout<<maxdep<<endl;
+    
+    return 0;
 }
