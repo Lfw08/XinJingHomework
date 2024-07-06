@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-const int maxn = 13010;
-int n, W, w[maxn], v[maxn], f[maxn];
+const int maxans = 13010;
+int n, W, w[maxans], v[maxans], f[maxans];
 
 // 动态规划求解背包问题
 void dpdfs(){

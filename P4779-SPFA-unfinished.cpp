@@ -2,16 +2,16 @@
 using namespace std;
 
 
-const int maxn = 100005; // 定义最大节点数
+const int maxans = 100005; // 定义最大节点数
 struct edge {
   int v, w;
 };
 
 int n, m, s; 
 
-vector<edge> adj[maxn]; 
+vector<edge> adj[maxans]; 
 
-int dist[maxn];
+int dist[maxans];
 
 bool spfa(int n, int s) { 
   // initialize dist

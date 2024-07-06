@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int maxn = 114514;
-int dp[maxn],v[maxn],w[maxn];
+const int maxans = 114514;
+int dp[maxans],v[maxans],w[maxans];
 int n,sum;//sum为总厚度
 
 

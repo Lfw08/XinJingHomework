@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int maxn=4000;
+const int maxans=4000;
 
 long long h,t,n;
 
-long long weight[maxn], v[maxn], f[maxn][maxn],size[maxn];
+long long weight[maxans], v[maxans], f[maxans][maxans],size[maxans];
 
 long long M1,M2;
 

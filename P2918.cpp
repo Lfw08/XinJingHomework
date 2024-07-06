@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int maxn=114514;
+const int maxans=114514;
 
 
 int n,m,ans=1e9;
-int a[maxn],b[maxn],dp[maxn];
+int a[maxans],b[maxans],dp[maxans];
 
 void dpdfs(){
 	for(int i=1;i<=n;i++)

@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int n,e[300],s[300][300],maxn=-1;
+int n,e[300],s[300][300],maxans=-1;
 
 void dpfunc(){
     for(int i=2;i<2*n;i++){
@@ -11,8 +11,8 @@ void dpfunc(){
             s[j][i]=max(s[j][i],s[j][k]+s[k+1][i]+e[j]*e[k+1]*e[i+1]);
             
             }//max(原来能量，左区间能量+右区间能量+合并后生成能量）  
-            if(s[j][i]>maxn){
-                maxn=s[j][i];//求最大值 
+            if(s[j][i]>maxans){
+                maxans=s[j][i];//求最大值 
             }
         }
     } 
@@ -31,6 +31,6 @@ int main(){
     
     dpfunc();
 
-    cout<<maxn;
+    cout<<maxans;
     return 0;
 }

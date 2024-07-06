@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int maxn = 114514;
+const int maxans = 114514;
 
-int n, M, weight[maxn], v[maxn], f[maxn];
+int n, M, weight[maxans], v[maxans], f[maxans];
 
 void dpdfs(){
 	for (int i = 1; i <= n; i++)

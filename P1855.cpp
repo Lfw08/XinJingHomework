@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 #define INF 1145141919
 using namespace std;
-const int maxn=1000;
-int t1[maxn],m1[maxn],f[maxn][maxn];
+const int maxans=1000;
+int t1[maxans],m1[maxans],f[maxans][maxans];
     int n,m,t;
 
 void dpdfs(){

@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int maxn=20005;
+const int maxans=20005;
 
-int v,n,c,space[maxn],ctmp[maxn]; //space = v, ctmp = weight
+int v,n,c,space[maxans],ctmp[maxans]; //space = v, ctmp = weight
 
-int f[maxn];
+int f[maxans];
 
 void dpdfs(){
 	for(int i=1;i<=n;i++)
