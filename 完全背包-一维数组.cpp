@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
 const int N = 3;
-const int C = 5;
+const int maxn = 5;
 int weight[N + 1] = {0,3,2,2};
 int Value[N + 1] = {0,5,10,20};
-int f[C + 1] ;
+int f[maxn + 1] ;
 int main(){
 	for (int i = 1;i <= N;i++){       
-       for (int j = weight[i];j <= C;j++){  
+       for (int j = weight[i];j <= maxn;j++){  
              f[j] = max(f[j],f[j - weight[i]] + Value[i]);  
         }  
     }  
-	cout<<f[C]<<endl;
+	cout<<f[maxn]<<endl;
 	return 0;
 }
 /*
-P1616·è¿ñ²ËëÈ
+P1616ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #include <iostream>
 using namespace std;
 int f[10000005], weight[10005], value[10005],C, N ;

@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 const int N = 3;
-const int C = 5;
+const int maxn = 5;
 int w[N + 1] = {0,3,2,2};
 int v[N + 1] = {0,5,10,20};
-int f[N + 1][C + 1] ;
-int Completeknapsack(){	//µÝÍÆ
+int f[N + 1][maxn + 1] ;
+int Completeknapsack(){	//ï¿½ï¿½ï¿½ï¿½
 	for(int i=1;i<=N;i++){     
-	    for(int j=0;j<=C;j++){//ÎªÊ²Ã´²»ÄÜj+=w[i]?         
+	    for(int j=0;j<=maxn;j++){//ÎªÊ²Ã´ï¿½ï¿½ï¿½ï¿½j+=w[i]?         
 		    for(int k=0;k*w[i]<=j;k++){              
 			   f[i][j]=max(f[i][j],f[i-1][j-k*w[i]]+k*v[i]);             
 			   }         
 		}    
 	}     
-	return f[N][C];
+	return f[N][maxn];
 }
 int main(){
 	cout<<Completeknapsack()<<endl;
