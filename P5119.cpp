@@ -37,7 +37,7 @@ bool check(int time) {
     // Return True if the number of vehicles is less than or equal to m,
     // indicating that it is possible to transport all items within the
     // time limit.
-    return tmp <= m;
+    return tmp < m;
 }
 
 /**
@@ -65,13 +65,14 @@ int main() {
 
     // Perform binary search to find the minimum time
     while (left <= right) {
-        int mid = (left + right) / 2;
-        ans = mid;
+        int mid = ((left + right) / 2 )+ 1;
+        
         // Check if the given time is valid
         if (check(mid)) {
-            left = mid + 1;
+            right = mid - 1;
+            ans = mid;
         } else {
-            right = mid-1;
+            left = mid + 1;
         }
     }
 
