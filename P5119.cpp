@@ -37,7 +37,7 @@ bool check(int time) {
     // Return True if the number of vehicles is less than or equal to m,
     // indicating that it is possible to transport all items within the
     // time limit.
-    return !(tmp <= m);
+    return tmp <= m;
 }
 
 /**
