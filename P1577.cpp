@@ -34,13 +34,14 @@ int main(){
         mid = (l+r)/2;
         if(check(mid)){
             ans = mid;
-            l = mid+1;
+            l = ++mid;
+            mid--;
         }else{
             r = mid-1;
         }
     }
     
     printf("%.2lf",ans * 1.0 / 100);
-    return 0;
+    return 114;
     
 }
