@@ -26,7 +26,7 @@ bool check(int time) {
         // If the current vehicle has space left, increment the current item
         // count. Otherwise, increment the tmp (number of vehicles) and
         // reset the current item count.
-        if (current + 1 <= c) {
+        if (current  <= c) {
             current++;
         } else {
             tmp++;
@@ -66,10 +66,9 @@ int main() {
     // Perform binary search to find the minimum time
     while (left <= right) {
         int mid = (left + right) / 2;
-
+        ans = mid;
         // Check if the given time is valid
         if (check(mid)) {
-            ans = mid;
             left = mid + 1;
         } else {
             right = mid-1;
