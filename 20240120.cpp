@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 char a[100][100];
-int m,n;
+int m,r;
 int cnt;
 void zousifang(int x,int y){
     a[x][y]='.';//Mark done
@@ -10,7 +10,7 @@ void zousifang(int x,int y){
         for(int j=-1;j<=1;j++){
             dx=x+i;
             dy=y+j;
-            if(dx>=0&&dx<=n&&dy>=0&&dy<m&&a[dx][dy]=='W'){//keep searching on the next point
+            if(dx>=0&&dx<=r&&dy>=0&&dy<m&&a[dx][dy]=='W'){//keep searching on the next point
                 zousifang(dx,dy);
             }
         }
@@ -18,13 +18,13 @@ void zousifang(int x,int y){
     return;
 } 
 int main(){
-    cin>>n>>m;
+    cin>>r>>m;
     for(int i=1;i<=m;i++){
-        for(int j=1;j<=n;j++){
+        for(int j=1;j<=r;j++){
             cin>>a[i][j];
         }
     }
-    for(int i=0;i<=n;i++){
+    for(int i=0;i<=r;i++){
         for(int j=0;j<m;j++){
             if(a[i][j]=='W'){
                 zousifang(i,j);

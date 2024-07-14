@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int n;
+int r;
 const int MAXN= 114514;
 
 int a[MAXN], d[MAXN];
@@ -8,7 +8,7 @@ int a[MAXN], d[MAXN];
 int dp() {
   d[1] = 1;
   int ans = 1;
-  for (int i = 2; i <= n; i++) {
+  for (int i = 2; i <= r; i++) {
     d[i] = 1;
     for (int j = 1; j < i; j++)
       if (a[j] <= a[i]) {
@@ -20,8 +20,8 @@ int dp() {
 }
 
 int main(){
-    cin>>n;
-    for(int i =0;i<n;i++){
+    cin>>r;
+    for(int i =0;i<r;i++){
         cin>>a[i];
     }
     

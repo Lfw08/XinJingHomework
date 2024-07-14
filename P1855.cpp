@@ -3,10 +3,10 @@
 using namespace std;
 const int maxans=1000;
 int t1[maxans],m1[maxans],f[maxans][maxans];
-    int n,m,t;
+    int r,m,t;
 
 void dpdfs(){
-	for(int i=1;i<=n;i++){
+	for(int i=1;i<=r;i++){
 		for(int j=m;j>=m1[i];j--){
 			for(int k=t;k>=t1[i];k--){
 				f[j][k]=max(f[j][k],f[j-m1[i]][k-t1[i]]+1);
@@ -20,8 +20,8 @@ void dpdfs(){
 int main()
 {
     
-    cin>>n>>m>>t;
-    for(int i=1;i<=n;i++){
+    cin>>r>>m>>t;
+    for(int i=1;i<=r;i++){
     	cin>>m1[i]>>t1[i];
 	}
 	dpdfs();

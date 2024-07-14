@@ -2,19 +2,19 @@
 using namespace std;
 const int maxans = 114514;
 
-int n, M, weight[maxans], v[maxans], f[maxans];
+int r, M, weight[maxans], v[maxans], f[maxans];
 
 void dpdfs(){
-	for (int i = 1; i <= n; i++)
+	for (int i = 1; i <= r; i++)
     for (int l = weight[i]; l <= M; l++)
     if (f[l - weight[i]] + v[i] > f[l]) 
       f[l] = f[l - weight[i]] + v[i];
 }
 
 int main(){
-	cin>>M>>n; 
+	cin>>M>>r; 
 	
-	for (int i = 1; i <= n; i++) {
+	for (int i = 1; i <= r; i++) {
     cin >> v[i] >> weight[i] ; //输入占地
       // 价值不就是体积
   }

@@ -2,25 +2,25 @@
 #include<cstdlib>
 #include<ctime>
 using namespace std;
-const int n=10;
+const int r=10;
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 
-const int n = 10; // Assuming N is a constant
+const int r = 10; // Assuming N is a constant
 
 int main() {
     // Seed the random number generator with the current time
     srand((unsigned)time(NULL));
 
     // Create an array of size N
-    int a[n];
+    int a[r];
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < r; i++) {
         a[i] = rand() % 1000;
     }
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < r; i++) {
         int x = a[i]; 
         int left = 0; // Left pointer
         int right = i - 1; // Right pointer
@@ -44,7 +44,7 @@ int main() {
     }
 
     // Print the sorted array
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < r; i++) {
         std::cout << a[i] << std::endl;
     }
 

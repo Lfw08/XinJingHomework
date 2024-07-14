@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int a[500005],n;
+int a[500005],r;
 long long js;
 int b[500005];
 void gb(int left,int right){
@@ -16,11 +16,11 @@ void gb(int left,int right){
         }
         else {
             b[i++]=a[zr++];
-            js+=(middle-zl);//这个地方是对的。这条与下面注释的语句留一个就对 
+            js+=(middle-zl);//锟斤拷锟斤拷胤锟斤拷嵌缘摹锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟阶拷偷锟斤拷锟斤拷锟斤拷一锟斤拷锟酵讹拷 
         }
     }    
     while(zl<middle){
-        b[i++]=a[zl++];        //js+=(zr-middle);错误 
+        b[i++]=a[zl++];        //js+=(zr-middle);锟斤拷锟斤拷 
     }    
     while(zr<right){
     	b[i++]=a[zr++];
@@ -31,11 +31,11 @@ void gb(int left,int right){
 }
 int main(){
     int i;
-    cin>>n;
-    for(i=0;i<n;i++)
+    cin>>r;
+    for(i=0;i<r;i++)
     	cin>>a[i];
-    gb(0,n);
-    for(i=0;i<n;i++)
+    gb(0,r);
+    for(i=0;i<r;i++)
     	cout<<a[i]<<' ';
     cout<<endl;
     cout<<js<<endl;

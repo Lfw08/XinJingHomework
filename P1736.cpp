@@ -2,10 +2,10 @@
 using namespace std;
 int pool[2510][2510] , f[2510][2510][2];
 int maxn;
-int n,m;
+int r,m;
 
 void dp(){
-    for(int i = 1; i <= n; i++)
+    for(int i = 1; i <= r; i++)
 	{
 		for(int j = 1; j <= m; j++)
 		{

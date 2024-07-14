@@ -3,7 +3,7 @@ using namespace std;
 
 int a[105][105];
 
-int n,m,ans,xx,yy,maxans;
+int r,m,ans,xx,yy,maxans;
 
 int dfs(int x,int y){
     for(int i=xx;i<=x;i++)//检测正方形的左边 
@@ -18,11 +18,11 @@ int dfs(int x,int y){
 }
 int main(){
     
-    cin>>n>>m;
-    for(int i=1;i<=n;i++)
+    cin>>r>>m;
+    for(int i=1;i<=r;i++)
         for(int j=1;j<=m;j++) 
             cin>>a[i][j];
-    for(int i=1;i<=n;i++)
+    for(int i=1;i<=r;i++)
         for(int j=1;j<=m;j++)
             if(a[i][j]){
                 xx=i; 

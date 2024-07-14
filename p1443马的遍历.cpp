@@ -3,7 +3,7 @@
 #include <cstring>
 #include <queue>
 using namespace std;
-int n, m;
+int r, m;
 int board[405][405];
 int dx[] = {-2, -2, -1, -1, 1, 1, 2, 2};
 int dy[] = {-1, 1, -2, 2, -2, 2, -1, 1};
@@ -19,8 +19,8 @@ void bfs(int startX, int startY) {
         for (int i = 0; i < 8; ++i) {
             int xx = x + dx[i];
             int yy = y + dy[i];
-            if(xx > 0 && xx <= n && yy > 0 && yy <= m && board[xx][yy] == -1){
-            	//ÅÐ±ß½çÇÒ¸ÃµãÎ´×ß¹ý 
+            if(xx > 0 && xx <= r && yy > 0 && yy <= m && board[xx][yy] == -1){
+            	//ï¿½Ð±ß½ï¿½ï¿½Ò¸Ãµï¿½Î´ï¿½ß¹ï¿½ 
                 board[xx][yy] = board[x][y] + 1;
                 q.push(xx);
                 q.push(yy);
@@ -31,15 +31,15 @@ void bfs(int startX, int startY) {
 
 int main() {
     int x, y;
-    scanf("%d%d%d%d",&n,&m,&x,&y);
+    scanf("%d%d%d%d",&r,&m,&x,&y);
 	memset(board, -1, sizeof(board));
-	//boardÊý×éÇå³É-1 
+	//boardï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-1 
 	board[x][y] = 0;
     bfs(x, y);
-    for (int i = 1; i <= n; ++i) {
+    for (int i = 1; i <= r; ++i) {
         for (int j = 1; j <= m; ++j) {
             printf("%-5d",board[i][j]);
-            //±ØÐëÕâÃ´Êä³ö£¬ÒòÎªÌâÖÐÒªÇó¿í¶ÈÊÇ5 
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5 
         }
         printf("\n");
     }

@@ -1,12 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
-int f[11][16],graph[11][16],path[11][16][11],n,m;
+int f[11][16],graph[11][16],path[11][16][11],r,m;
 int main()
 {
     // 输入公司数量和机器数量
-    cin>>n>>m;
+    cin>>r>>m;
     // 输入每个公司的每台机器的价值
-    for(int i=1;i<=n;i++)
+    for(int i=1;i<=r;i++)
     {
         for(int j=1;j<=m;j++)
             cin>>graph[i][j];
@@ -14,7 +14,7 @@ int main()
     // 初始化f数组为0
     memset(f,0,sizeof(f));
     // 动态规划求解最大价值
-    for(int i=1;i<=n;i++)
+    for(int i=1;i<=r;i++)
         for(int j=0;j<=m;j++)    
             for(int k=0;k<=j;k++)
             {
@@ -30,8 +30,8 @@ int main()
                 }
             }
     // 输出最大价值
-    cout<<f[n][m]<<endl;
+    cout<<f[r][m]<<endl;
     // 输出每个公司的给的机器数量
-    for(int i=1;i<=n;i++) cout<<i<<" "<<path[n][m][i]<<endl;
+    for(int i=1;i<=r;i++) cout<<i<<" "<<path[r][m][i]<<endl;
     return 0;
 }

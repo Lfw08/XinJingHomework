@@ -3,18 +3,18 @@ using namespace std;
 
 int board[114][114];
 int prefix[114][114];
-int n,m;
+int r,m;
 int k,ans;
 
 
 void pre(){
-    for(int i=1;i<=n;++i)
+    for(int i=1;i<=r;++i)
 	for(int j=1;j<=m;++j)
 	{
 		prefix[i][j]=board[i][j]+prefix[i][j-1]+prefix[i-1][j]-prefix[i-1][j-1];
         
 	}
-    for(int i=1;i<=n;++i)
+    for(int i=1;i<=r;++i)
 	    for(int j=1;j<=m;++j){
             if(board[i][j]!=1)
 		        continue;//不是1的不用看了
@@ -28,7 +28,7 @@ void pre(){
 	
 		
 	
-    for(int i=1;i<=n;++i)
+    for(int i=1;i<=r;++i)
 	    for(int j=1;j<=m;++j)
 	    {
 		    if(board[i][j]!=1)
@@ -45,8 +45,8 @@ void pre(){
 }
 
 int main(){
-    cin>>n>>m;
-    for(int i=1;i<=n;i++){
+    cin>>r>>m;
+    for(int i=1;i<=r;i++){
         for(int j=1;j<=m;j++){
             cin>>board[i][j];
         }

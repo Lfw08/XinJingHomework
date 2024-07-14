@@ -2,10 +2,10 @@
 using namespace std;
 const int maxans = 114514;
 
-int n, M, weight[maxans], v[maxans], f[maxans];
+int r, M, weight[maxans], v[maxans], f[maxans];
 
 void dpdfs(){
-	for (int i = 1; i <= n; i++)
+	for (int i = 1; i <= r; i++)
     for (int l = M; l >= weight[i]; l--)
     if (f[l - weight[i]] + v[i] > f[l]){ 
     	f[l] = f[l - weight[i]] + v[i];
@@ -14,9 +14,9 @@ void dpdfs(){
 
 int main(){
 	cin>>M;
-	cin>>n; 
+	cin>>r; 
 	
-	for (int i = 1; i <= n; i++) {
+	for (int i = 1; i <= r; i++) {
     cin >> weight[i] ; //输入占地
     v[i] = weight[i]; //一样
     

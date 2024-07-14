@@ -2,26 +2,26 @@
 #include <cstdio>
 #include <cstring>
 using namespace std;
-int n, V, weight[100005], value[100005],num[100005]; 
+int r, V, weight[100005], value[100005],num[100005]; 
 int dp[100005];
 int main(){	
-    cin>>n>>V;
-    for(int i=1; i<=n; i++)
+    cin>>r>>V;
+    for(int i=1; i<=r; i++)
         cin>>value[i]>>weight[i]>>num[i];
-    for(int i=1; i<=n; i++){    	
+    for(int i=1; i<=r; i++){    	
         if(num[i]*weight[i] > V){
 		 	for(int j = weight[i]; j <= V; j++)//wanquan
             	dp[j] = max(dp[j], dp[j - weight[i]] + value[i]);
         }else{            
             int a = 1;
             while(num[i] > a){
-                num[i] -= a;//num[i]ÊÇÊ£Óà¸öÊý£¬²»ÊÇÔ­Ê¼¸öÊýÁË 
-                //×ªÎª01±³°ü£¬Æ«Æ«ÔìÎï£¬ËµÊÇÎªÁËÊ¡Ê±¼ä
+                num[i] -= a;//num[i]ï¿½ï¿½Ê£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+                //×ªÎª01ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ«Æ«ï¿½ï¿½ï¿½ï£¬Ëµï¿½ï¿½Îªï¿½ï¿½Ê¡Ê±ï¿½ï¿½
 				for(int j = V; j >= a * weight[i]; j--)				
                     dp[j] = max(dp[j], dp[j - a * weight[i]] + a * value[i]);
                 a *= 2;
             }
-            //±Ï¾¹²»ÊÇÎÞÊý¼þ£¬ËùÒÔ»áÓÐÔìÎïºóµÄÊ£Óà£¬ËùÒÔµ¥ÔìÒ»¼þ 
+            //ï¿½Ï¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½à£¬ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ 
             for(int j = V; j >= num[i] * weight[i]; --j)
                 dp[j] = max(dp[j], dp[j - num[i] * weight[i]] + num[i] * value[i]);
         }
@@ -29,5 +29,5 @@ int main(){
     printf("%d\n", dp[V]);
     return 0;
 }
-/*VÊÇ×ÜÌå»ý£¬nÊÇ×Ü¹²¼¸¸öÎïÆ· 
-ÖØÁ¿ ¼ÛÖµ ÊýÁ¿*/ 
+/*Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ· 
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Öµ ï¿½ï¿½ï¿½ï¿½*/ 

@@ -7,7 +7,7 @@ typedef long long ll;
 
 const int N=1e5+23;
 
-int n,Q;
+int r,Q;
 ll a[N],sum[4*N],mi[4*N],tag[4*N];
 
 inline void build(int l,int r,int p)
@@ -77,10 +77,10 @@ inline ll query_sum(int s,int t,int l,int r,int p)
 
 int main()
 {
-    cin>>n>>Q;
-    rep(i,1,n)
+    cin>>r>>Q;
+    rep(i,1,r)
         cin>>a[i];
-    build(1,n,1);
+    build(1,r,1);
     while(Q--)
     {
         char opt;
@@ -88,15 +88,15 @@ int main()
         if(opt=='P'){
             int l,r,z;
             cin>>l>>r>>z;
-            update(l,r,1,n,z,1);
+            update(l,r,1,r,z,1);
         }
         if(opt=='M'){
             int l,r;cin>>l>>r;
-            cout<<query_min(l,r,1,n,1)<<endl;
+            cout<<query_min(l,r,1,r,1)<<endl;
         }
         if(opt=='S'){
             int l,r;cin>>l>>r;
-            cout<<query_sum(l,r,1,n,1)<<endl;
+            cout<<query_sum(l,r,1,r,1)<<endl;
         }
     }
     return 0;

@@ -4,7 +4,7 @@
 using namespace std;
 int edges[1005][1005];
 int color[1005][1005];//ÿ��������ɫ�� 
-int n, m;
+int r, m;
 int nextColor;
 int colorCount[1000005];//ÿ����ɫ�����ߵĸ����� 
 const int dx[4] = {0, 1, 0, -1};
@@ -27,7 +27,7 @@ int bfs(int x, int y) {
         for (int i = 0; i < 4; ++i) {
             int xx = x + dx[i];
             int yy = y + dy[i];
-            if (!(xx > 0 && xx <= n && yy > 0 && yy <= n)) {
+            if (!(xx > 0 && xx <= r && yy > 0 && yy <= r)) {
             	//�б߽� 
                 continue;
             }
@@ -46,9 +46,9 @@ int bfs(int x, int y) {
 }
 
 int main() {
-    cin >> n >> m;
-    for (int i = 1; i <= n; ++i) {
-        for (int j = 1; j <= n; ++j) {
+    cin >> r >> m;
+    for (int i = 1; i <= r; ++i) {
+        for (int j = 1; j <= r; ++j) {
             char c;
             cin >> c;
             edges[i][j] = c - '0';

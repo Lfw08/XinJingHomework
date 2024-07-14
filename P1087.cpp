@@ -2,7 +2,7 @@
 using namespace std;
 
 char tmp[1145];
-int n;
+int r;
 
 void tree(int left,int right){
     if(right>left){
@@ -30,9 +30,9 @@ void tree(int left,int right){
 }
 
 int main(){
-    cin>>n;
+    cin>>r;
     cin>>tmp;
 
-    tree(0,(1<<n)-1);
+    tree(0,(1<<r)-1);
     return 0;
 }

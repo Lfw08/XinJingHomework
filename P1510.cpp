@@ -2,12 +2,12 @@
 using namespace std;
 const int maxans=20005;
 
-int v,n,c,space[maxans],ctmp[maxans]; //space = v, ctmp = weight
+int v,r,c,space[maxans],ctmp[maxans]; //space = v, ctmp = weight
 
 int f[maxans];
 
 void dpdfs(){
-	for(int i=1;i<=n;i++)
+	for(int i=1;i<=r;i++)
 		for(int j=c;j>=ctmp[i];j--)
 			f[j]=max(f[j],f[j-ctmp[i]]+space[i]);
 }
@@ -15,8 +15,8 @@ void dpdfs(){
 
 int main()
 {
-	cin>>v>>n>>c;
-	for(int i=1;i<=n;i++){
+	cin>>v>>r>>c;
+	for(int i=1;i<=r;i++){
 		cin>>space[i]>>ctmp[i];
 		}
 	

@@ -3,11 +3,11 @@ using namespace std;
 const int maxans=114514;
 
 
-int n,m,ans=1e9;
+int r,m,ans=1e9;
 int a[maxans],b[maxans],dp[maxans];
 
 void dpdfs(){
-	for(int i=1;i<=n;i++)
+	for(int i=1;i<=r;i++)
 
     cin>>a[i]>>b[i];
     dpdfs();

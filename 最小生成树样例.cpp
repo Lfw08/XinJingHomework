@@ -1,25 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n, m;
+int r, m;
 int gh[110][110];
 int vis[110];
 int out = 0;
 int tmpk, tmpj, w;
 
 int main() {
-    cin >> n;
-    for (int i = 1; i <= n; i++) {
-        for (int g = 1; g <= n; g++) {
+    cin >> r;
+    for (int i = 1; i <= r; i++) {
+        for (int g = 1; g <= r; g++) {
             cin >> gh[i][g];
         }
     }
     vis[0] = 1;
-    for (int num = 0; num < n - 1; num++) {
-        for (int j = 1; j < n; j++) {
+    for (int num = 0; num < r - 1; num++) {
+        for (int j = 1; j < r; j++) {
             if (vis[j] == 1) {
                 w = 10000;
-                for (int k = 1; k < n; k++) {
+                for (int k = 1; k < r; k++) {
                     if (vis[k] == 0 && gh[j][k] < w) {
                         tmpj = j;
                         tmpk = k;

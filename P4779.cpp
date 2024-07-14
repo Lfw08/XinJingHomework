@@ -15,9 +15,9 @@ vector<edge> adj[100005];
 priority_queue<node> q;
 int dist[100005];
 bool vis[100005];
-int n,m,s;
+int r,m,s;
 void djstl(){
-	for(int i = 1; i <= n; i++){
+	for(int i = 1; i <= r; i++){
 		vis[i] = false;
 		dist[i] = inf;
 	}
@@ -48,7 +48,7 @@ void djstl(){
 	}
 }
 int main(){
-	scanf("%d%d%d",&n, &m, &s);	
+	scanf("%d%d%d",&r, &m, &s);	
 	int u;
 	edge vw;
 	for(int i=0;i<m;i++){
@@ -56,7 +56,7 @@ int main(){
 		adj[u].push_back(vw);
 	}
 	djstl();
-	for(int i=1;i<=n;i++){
+	for(int i=1;i<=r;i++){
 		cout<<dist[i]<<" ";
 	}
 	return 0;

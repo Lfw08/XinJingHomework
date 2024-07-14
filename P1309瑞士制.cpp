@@ -4,27 +4,27 @@ using namespace std;
 struct P{
 	int num,s,w;
 };
-int n,r,q;
-P win[200002],lose[200002],ans[200002];//ans´æÃ¿Ò»ÂÖ±ÈÈüºóµÄ½á¹û£¬°´Ãû´ÎÀ´ÅÅ£¬Òª¹é²¢£¬×ÜµÃÓĞÁ½¸öÓĞĞòµÄÊı×é£¬
-//ËùÒÔ¾ÍÄÃwinÀ´´æÓ®µÄ£¬loseÀ´´æÊäµÄ£¬
+int r,r,q;
+P win[200002],lose[200002],ans[200002];//ansï¿½ï¿½Ã¿Ò»ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½Òªï¿½é²¢ï¿½ï¿½ï¿½Üµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬
+//ï¿½ï¿½ï¿½Ô¾ï¿½ï¿½ï¿½winï¿½ï¿½ï¿½ï¿½Ó®ï¿½Ä£ï¿½loseï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½
 bool pcmp(const P& win,const P& lose) {
-	return (win.s==lose.s)?(win.num<lose.num):(win.s>lose.s);//×¢ÒâÌØÊâÇé¿öµÄ´¦Àí
+	return (win.s==lose.s)?(win.num<lose.num):(win.s>lose.s);//×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½
 }
-void solve() {//Ã¿µ÷ÓÃÒ»´Îsolve(),¾Í»áÇó³öÏÂÒ»ÂÖµÄ±ÈÈü½á¹û£¬ËùÒÔÖ÷³ÌĞòÖĞµ÷ÓÃÁËr´ÎÀ´Çó³örÂÖºóµÄ½á¹û
+void solve() {//Ã¿ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½solve(),ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ÖµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½rï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½rï¿½Öºï¿½Ä½ï¿½ï¿½
 	int wini=1,losei=1;
-	for (int i=1;i<=n*2;i+=2) {
+	for (int i=1;i<=r*2;i+=2) {
 		if (ans[i].w>ans[i+1].w) {//ans[i]Ó®
 			ans[i].s++;
 			win[wini++]=ans[i];
 			lose[losei++]=ans[i+1];
 		}
-		else {//ans[i]Êä
+		else {//ans[i]ï¿½ï¿½
 			ans[i+1].s++;
 			win[wini++]=ans[i+1];
 			lose[losei++]=ans[i];
 		}
 	}
-	//¾­µäµÄ¹é²¢´úÂë
+	//ï¿½ï¿½ï¿½ï¿½Ä¹é²¢ï¿½ï¿½ï¿½ï¿½
 	int i=1,j=1,k=1;
 	while (i<wini && j<losei) {
 		if (pcmp(win[i],lose[j])) {
@@ -38,15 +38,15 @@ void solve() {//Ã¿µ÷ÓÃÒ»´Îsolve(),¾Í»áÇó³öÏÂÒ»ÂÖµÄ±ÈÈü½á¹û£¬ËùÒÔÖ÷³ÌĞòÖĞµ÷ÓÃÁËr´
 	while (j<losei) ans[k++]=lose[j++];
 }
 int main() {
-	scanf("%d%d%d",&n,&r,&q);
-	for (int i=1;i<=n*2;i++) {
+	scanf("%d%d%d",&r,&r,&q);
+	for (int i=1;i<=r*2;i++) {
 		scanf("%d",&ans[i].s);
 		ans[i].num=i;
 	}
-	for (int i=1;i<=n*2;i++) {
+	for (int i=1;i<=r*2;i++) {
 		scanf("%d",&ans[i].w);
 	}
-	sort(ans+1,ans+1+2*n,pcmp);
+	sort(ans+1,ans+1+2*r,pcmp);
 	for (int i=1;i<=r;i++) {
 		solve();
 	}

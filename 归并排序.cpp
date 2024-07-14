@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
-int a[200000],n;
+int a[200000],r;
 int b[200000];
 void gb(int left,int right){
-    if((right-left)==1)//µÝ¹é³ö¿Ú 
+    if((right-left)==1)//ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ 
     	return;
     int middle=(left+right)/2;
     gb(left,middle);
@@ -21,16 +21,16 @@ void gb(int left,int right){
     while(zr<right)
 		b[i++]=a[zr++];
     for(i=left;i<right;i++)
-      a[i]=b[i];//×îºóÓÖµ¼»ØaÊý×éÀï 
+      a[i]=b[i];//ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
     return;
 }
 int main(){
     int i;
-    cin>>n;
-    for(i=0;i<n;i++)
+    cin>>r;
+    for(i=0;i<r;i++)
     	cin>>a[i];
-    gb(0,n);
-    for(i=0;i<n;i++)
+    gb(0,r);
+    for(i=0;i<r;i++)
     	cout<<a[i]<<' ';
     cout<<endl;
     return 0;

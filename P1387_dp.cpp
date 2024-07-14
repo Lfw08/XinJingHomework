@@ -7,11 +7,11 @@ int min3(int x,int y,int z){
 
 int f[114][114];
 int prefix[114][114];
-int n,m;
+int r,m;
 int maxn;
 
 void dp(){
-    for(int i = 1; i<=n; i++){
+    for(int i = 1; i<=r; i++){
         for(int j =1 ; j<=m; j++){
             if(prefix[i][j] == 1){
                 f[i][j] = min3(f[i][j-1],f[i-1][j],f[i-1][j-1])+1;
@@ -22,13 +22,13 @@ void dp(){
 
 int main(){
     maxn = -1e9;
-    cin>>n>>m;
-    for(int i=1;i<=n;i++){
+    cin>>r>>m;
+    for(int i=1;i<=r;i++){
         for(int j=1;j<=m;j++){
             cin>>prefix[i][j];
         }
     }
-    for(int i = 1; i<=n;i++){
+    for(int i = 1; i<=r;i++){
         for(int j=1;j<=m;j++){
             dp();
             maxn = max(maxn,f[i][j]);

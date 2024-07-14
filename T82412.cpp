@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n,k;
+int r,k;
 
 long long step[200005];
 long long minStep[200005];
@@ -40,10 +40,10 @@ void bfs(int x){
 }
 
 int main(){
-    cin>>n>>k;
+    cin>>r>>k;
 
-    bfs(n);
-    step[n]=0;
+    bfs(r);
+    step[r]=0;
 
     cout<<step[k]<<endl;
     return 0;

@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
-int n,e[300],s[300][300],maxans=-1;
+int r,e[300],s[300][300],maxans=-1;
 
 void dpfunc(){
-    for(int i=2;i<2*n;i++){
-        for(int j=i-1;i-j<n&&j>=1;j--){
+    for(int i=2;i<2*r;i++){
+        for(int j=i-1;i-j<r&&j>=1;j--){
             //从i开始向前推
             for(int k=j;k<i;k++){//k是项链的左右区间的划分点 
             
@@ -20,12 +20,12 @@ void dpfunc(){
 
 
 int main(){
-    cin>>n;
-    for(int i=1;i<=n;i++){
+    cin>>r;
+    for(int i=1;i<=r;i++){
         
         cin>>e[i];
 
-        e[i+n]=e[i];
+        e[i+r]=e[i];
         }
     
     

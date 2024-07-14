@@ -1,14 +1,14 @@
 #include<iostream>
 #include<string>
 using namespace std;
-const int n=10000;
+const int r=10000;
 void calculate_2(int a[],int b[],int c[]);
 int convert(string s,int n[]);
 void output(int n[]);
-int a[n+1];
-int b[n+1];
-int c1[2*n+2];
-int c2[2*n+2];
+int a[r+1];
+int b[r+1];
+int c1[2*r+2];
+int c2[2*r+2];
 int main()
 {
 	string s1,s2;

@@ -7,7 +7,7 @@ struct edge {
   int v, w;
 };
 
-int n, m, s; 
+int r, m, s; 
 
 vector<edge> adj[maxans]; 
 

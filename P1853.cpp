@@ -3,10 +3,10 @@ using namespace std;
 int w[100000];
 int v[100000];
 int f[100000];
-int s,n,d;
+int s,r,d;
 
 void dpdfs(){
-    for(int i=1; i<=n; ++i){
+    for(int i=1; i<=r; ++i){
 		int m=s/1000;
 		for(int j=1; j<=d; ++j){
 			for(int k=w[j]/1000; k<=m; ++k){
@@ -23,7 +23,7 @@ void dpdfs(){
 
 int main()
 {
-	cin>>s>>n>>d;
+	cin>>s>>r>>d;
 	for(int i=1; i<=d; ++i){
 		cin>>w[i]>>v[i];
 	}

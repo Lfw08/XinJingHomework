@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 //输入
-int n,m;
+int r,m;
 char sky[1005][1005];
 char tmp[1005];
 
@@ -22,7 +22,7 @@ void dfs(int x,int y){
         int yy = y +dy[i];
 
         //没越界，且没有标记
-        if(xx >= 1 && xx<=m && yy>=1 && yy<=n && cons[xx][yy]==0){
+        if(xx >= 1 && xx<=m && yy>=1 && yy<=r && cons[xx][yy]==0){
             cons[xx][yy] = cons[x][y];
             dfs(xx,yy);
         }
@@ -31,10 +31,10 @@ void dfs(int x,int y){
 }
 
 int main(){
-    cin>>n>>m;
+    cin>>r>>m;
 
     //输入sky
-    for(int i=1;i<=n;i++){
+    for(int i=1;i<=r;i++){
         cin>>tmp;
         strcpy(sky[i],tmp);
     }

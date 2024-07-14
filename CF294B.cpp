@@ -2,18 +2,18 @@
 using namespace std;
 const int maxans = 114514;
 int dp[maxans],v[maxans],w[maxans];
-int n,sum;//sum为总厚度
+int r,sum;//sum为总厚度
 
 
 void dpfunc(){
-	for( int i=1; i<=n; i++ ) //第 i 本书
+	for( int i=1; i<=r; i++ ) //第 i 本书
 		for( int j=sum; j>=v[i]; j-- ) 
 			dp[j] = min( dp[j], dp[ j-v[i] ]+w[i] );
 			}
 
 int main(){
-	cin>>n;
-	for( int i=1; i<=n; i++ ){
+	cin>>r;
+	for( int i=1; i<=r; i++ ){
 		cin>>v[i]>>w[i];
 		sum += v[i]; 
 	}

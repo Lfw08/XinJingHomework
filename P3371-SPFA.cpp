@@ -10,10 +10,10 @@ vector<edge> adj[100005];
 queue<int> q;
 int dist[100005];
 bool vis[100005];
-int n,m,s;
+int r,m,s;
 void spfa(){
 	//Initialization:
-	for(int i = 1; i <= n; i++){
+	for(int i = 1; i <= r; i++){
 	vis[i] = false;
 	dist[i] = inf;
 	}
@@ -61,7 +61,7 @@ void spfa(){
 }
 int main(){
 	// Read the number of nodes, edges and starting node (s)
-	scanf("%d%d%d",&n, &m, &s);
+	scanf("%d%d%d",&r, &m, &s);
 
 	// Read the edges, where each edge is represented by a tuple (u, v, w)
 	// where u is the starting node, v is the ending node and w is the weight
@@ -79,7 +79,7 @@ int main(){
 	spfa();
 
 	// Print the shortest distance from the starting node to each node
-	for(int i=1;i<=n;i++){
+	for(int i=1;i<=r;i++){
 		// Print the shortest distance from s to node i
 		cout<<dist[i]<<" ";
 	}

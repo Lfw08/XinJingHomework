@@ -6,11 +6,11 @@ struct Stu
 	string name;
 	int num;
 }in[20005];
-int n,m,k;
+int r,m,k;
 string in1,in2;
 void begin()
 {
-	for(int i=1;i<=n;i++)
+	for(int i=1;i<=r;i++)
 	{
 		in[i].num=i;
 	}
@@ -18,7 +18,7 @@ void begin()
 int findNum(string s)
 {
 	int out;
-	for(int i=1;i<=n;i++)
+	for(int i=1;i<=r;i++)
 	{
 		if(in[i].name==s)
 		{
@@ -41,9 +41,9 @@ int find(int x)
 }
 int main()
 {
-	cin>>n>>m;
+	cin>>r>>m;
 	begin();
-	for(int i=1;i<=n;i++)
+	for(int i=1;i<=r;i++)
 	{
 		cin>>in[i].name;
 	}

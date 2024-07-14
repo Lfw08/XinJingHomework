@@ -3,7 +3,7 @@ using namespace std;
 const int max1=1e9+5;
 const int max2=2e5;
 
-int n,m;
+int r,m;
 int a[max2];
 int b[max2];
 
@@ -42,8 +42,8 @@ bool check(int x,int y){
 }
 
 int main(){
-    cin>>n>>m;
-    for(int i = 1; i<=n; i++){//init
+    cin>>r>>m;
+    for(int i = 1; i<=r; i++){//init
         a[i] = i;
     }
     for(int i = 1; i<=m; i++){

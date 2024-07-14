@@ -6,7 +6,7 @@ using namespace std;
 #define nd n
 
 int m;
-int n;//节点数，道路数
+int r;//节点数，道路数
 
 const int inf = 1e5+5;
 struct edge{

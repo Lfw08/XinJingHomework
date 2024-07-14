@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n,k;
+int r,k;
 int qx,qy,kx,ky,tx,ty;
 
 bool flag=0;
@@ -38,7 +38,7 @@ void bfs(int x,int y){
             int tmpy = yy+dy[i];
 
             //判断是否为不能到达的点且没有越界
-            if(tmpx>0 && tmpx<=n && tmpy>0 && tmpy<=n && a[tmpx][tmpy]==0){
+            if(tmpx>0 && tmpx<=r && tmpy>0 && tmpy<=r && a[tmpx][tmpy]==0){
                 //确认是否为目标点
                 if(tmpx==tx && tmpy==ty){
                     flag=1;
@@ -71,26 +71,26 @@ void bfs(int x,int y){
 int main(){
     cin>>k;//重复几次
     for(int p=0;p<k;p++){
-        cin>>n>>qx>>qy>>kx>>ky>>tx>>ty;
+        cin>>r>>qx>>qy>>kx>>ky>>tx>>ty;
         //与q相同的y标记为不可用
-        for(int i=1;i<=n;i++){
+        for(int i=1;i<=r;i++){
             a[i][qy] = 1;
         }
         //与q相同的x标记为不可用
-        for(int i=1;i<=n;i++){
+        for(int i=1;i<=r;i++){
             a[qx][i] = 1;
         }
         //qx+qy相同标记为不可用
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
+        for(int i=1;i<=r;i++){
+            for(int j=1;j<=r;j++){
                 if(i+j == qx+qy){
                     a[i][j] = 1;
                 }
             }
         }
         //qx、qy之差相同标记为不可用
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
+        for(int i=1;i<=r;i++){
+            for(int j=1;j<=r;j++){
                 if(i-j+1000 == qx-qy+1000){
                     a[i][j] = 1;
                 }
@@ -108,14 +108,14 @@ int main(){
         }
 
         //清空准备下一组
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
+        for(int i=1;i<=r;i++){
+            for(int j=1;j<=r;j++){
                 a[i][j] = 0;
             }
         }
         //清空b
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
+        for(int i=1;i<=r;i++){
+            for(int j=1;j<=r;j++){
                 b[i][j] = 0;
             }
         }

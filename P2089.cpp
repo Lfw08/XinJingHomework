@@ -1,13 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int n,ans1,ans2[10001][11],sum,a[11];
+int r,ans1,ans2[10001][11],sum,a[11];
 
 void dfs(int t,int m)
 {
     if (t>10) 
     {
-        if (m==n)
+        if (m==r)
         {
             ans1++;//统计方案总数 
             for (int i=1;i<=10;i++)
@@ -17,7 +17,7 @@ void dfs(int t,int m)
     }
     for (int i=1;i<=3;i++)
     {
-        if (m+i>n) break; 
+        if (m+i>r) break; 
         a[t]=i;
         dfs(t+1,m+i);
         a[t]=0;
@@ -25,7 +25,7 @@ void dfs(int t,int m)
 }
 int main()
 {
-    cin>>n;
+    cin>>r;
     dfs(1,0);//从第一种调料开始尝试，美味程度为0 
     cout<<ans1<<endl;
     for (int i=1;i<=ans1;i++)

@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int n,m;
+int r,m;
 int a[2000][2000];
 int dx[]={1, -1, 0, 0};
 int dy[]={0,  0, 1,-1};
@@ -28,7 +28,7 @@ void bfs(int xstart,int ystart){
        for(int i=0;i<4;i++){
             int xx =xtmp+dx[i];
             int yy =ytmp+dy[i];
-            if(xx>0 && xx<=n && yy>0 && yy<=n && b[xx][yy]==0 && a[xx][yy]!=a[xtmp][ytmp]){
+            if(xx>0 && xx<=r && yy>0 && yy<=r && b[xx][yy]==0 && a[xx][yy]!=a[xtmp][ytmp]){
                 b[xx][yy]=1;//标记为已访
                 c[xx][yy]=1;//标记为可到达
                 q.push(xx);
@@ -39,11 +39,11 @@ void bfs(int xstart,int ystart){
     return;
 }
 int main(){
-    cin>>n>>m;
+    cin>>r>>m;
     memset(a,0,sizeof(a));
     memset(b,0,sizeof(b));
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
+    for(int i=0;i<r;i++){
+        for(int j=0;j<r;j++){
             char tmp;
             cin>>tmp;
             a[i][j]=tmp-'0';
@@ -55,8 +55,8 @@ int main(){
         cin>>e>>d;
         bfs(e,d);
         //计数
-        for(int h=0;h<n;h++){
-            for(int g=0;g<n;g++){
+        for(int h=0;h<r;h++){
+            for(int g=0;g<r;g++){
                 if(c[h][g]!=0){
                     cnt[i]++;
                 }
@@ -69,7 +69,7 @@ int main(){
 
     }
     cout<<endl;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<r;i++){
         if(cnt[i]!=0)
             cout<<cnt[i]<<endl;
     }

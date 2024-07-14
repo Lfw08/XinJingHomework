@@ -6,7 +6,7 @@ const int dx[4]={0, 0, -1, 1};
 const int dy[4]={1, -1, 0, 0}; //四个方向 对应上、下、左、右 
 
 const int N = 1000 + 5;
-int p[N][N], n, m, ans=0x3f3f3f3f; //答案初始为最大化 
+int p[N][N], r, m, ans=0x3f3f3f3f; //答案初始为最大化 
 int f[N][N]; //记录走到这个点所受伤害的最小值 
 bool v[N][N]; //该点是否访问过了 
 
@@ -21,13 +21,13 @@ void dfs() {
 		int x=s[top].x, y=s[top].y, maxdamage=s[top].maxdamage; 
 		top--; v[x][y]=false; //出栈 
 		if (maxdamage >= ans) continue; //如果当前受到的伤害大于答案的话，再往下搜伤害也不会变小了，于是果断剪枝 
-		if (x == n) { //搜到最后一行则可记录答案 
+		if (x == r) { //搜到最后一行则可记录答案 
 			ans=maxdamage; //由于上面的剪枝，这里的答案一定是最优解了 
 			continue;
 		}
 		for (int i=0; i<4; i++) {
 			int nx=x+dx[i], ny=y+dy[i];
-			if (nx < 1 || nx > n || ny < 1 || ny > m) continue; //检查是否越界 
+			if (nx < 1 || nx > r || ny < 1 || ny > m) continue; //检查是否越界 
 			if (v[nx][ny]) continue; //检查是否访问过了 
 			int nextdamage=max(maxdamage, p[nx][ny]); //求到下一个点后受到的伤害 
 			if (f[nx][ny] <= nextdamage) continue;
@@ -42,9 +42,9 @@ void dfs() {
 
 int main() {
 	memset(f, 0x3f, sizeof(f)); //初始化 
-	cin>>n>>m;
+	cin>>r>>m;
     
-	for (int i=1; i<=n; i++)
+	for (int i=1; i<=r; i++)
 		for (int j=1; j<=m; j++) cin>>p[i][j];
 	for (int i=1; i<=m; i++) { //以第二行每一个点作为起点开始搜索
 		v[2][i]=true;
